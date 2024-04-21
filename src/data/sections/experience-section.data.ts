@@ -1,82 +1,97 @@
 import type { ExperienceSection } from '@/types/sections/experience-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { facebook, github, instagram, linkedin, twitter, website } from '../helpers/links';
+import { fbk, aleph, unige, unitn, github, instagram, linkedin, twitter, website } from '../helpers/links';
 import {
-  chakraUi,
-  eslint,
-  firebase,
-  nextJs,
-  nx,
-  pnpm,
-  react,
-  reactQuery,
-  tailwindCss,
-  typescript,
-  vue,
+  cloudnative,
+  devsecops,
+  authorization,
+  authentication,
+  appliedcryptography,
+  internetofthings,
+  automotive,
+  reverseengineering,
+  android,
 } from '../helpers/skills';
 
 const experienceSectionData = {
   config: {
-    title: 'Work experience',
+    title: 'Experience',
     slug: 'experience',
     icon: 'fa6-solid:suitcase',
     visible: true,
   },
   jobs: [
     {
-      role: 'Senior front-end developer',
-      company: 'Google',
-      image: import('@/assets/logos/google-logo.jpg'),
-      dates: [new Date('2020-02'), null],
-      description: `
-        - In tristique vulputate augue vel egestas.
-        - Quisque ac imperdiet tortor, at lacinia ex.
-        - Duis vel ex hendrerit, commodo odio sed, aliquam enim.
-        - Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi.
-        - Nunc malesuada leo et est iaculis facilisis.
-        - Fusce eu urna ut magna malesuada fringilla.
-      `,
+      role: 'Researcher',
+      company: 'Fondazione Bruno Kessler',
+      image: import('@/assets/logos/fbk-logo.png'),
+      dates: [new Date('2023-11'), null],
+      description: `Research on applied cryptography, security, and access control for cloud native applications`,
       tagsList: {
-        title: 'Technologies',
-        tags: [react(), nextJs(), typescript(), nx(), firebase()],
-      },
-      links: [facebook({ url: '#' }), linkedin({ url: '#' })],
+        title: 'Topics',
+        tags: [appliedcryptography(), authentication(), authorization(), devsecops(), cloudnative()],
+      },    
+      links: [fbk({ url: 'https://www.fbk.eu/en/' }), aleph({ url: 'https://aleph.fbk.eu/' })],
     },
     {
-      role: 'React.js developer',
-      company: 'Facebook',
-      image: import('@/assets/logos/facebook-logo.png'),
-      dates: [new Date('2019-04'), new Date('2020-02')],
-      description: `
-        - Aenean eget ultricies felis. Pellentesque dictum massa ut tellus eleifend, sed posuere massa mattis.
-        - Ut posuere massa lacus, eleifend molestie tortor auctor vel.
-        - Sed sed sollicitudin eros, id ultricies mi. Aliquam sodales elit vel ante tempor, non vehicula nibh facilisis.
-        - Cras feugiat ultricies maximus. Aliquam tristique ex odio, ac semper urna accumsan a.
-      `,
+      role: 'PhD Student',
+      company: 'University of Genoa \& Fondazione Bruno Kessler',
+      image: import('@/assets/logos/unige-logo.jpg'),
+      dates: [new Date('2020-11'), new Date('2023-10')],
+      description: `Joint PhD on cryptographic access control in cloud-edge-IoT applications (e.g., Cooperative Connected and Automated Mobility) and design of architectural models for optimal enforcement of cryptographic access control policies`,
       tagsList: {
-        title: 'Technologies',
-        tags: [react(), reactQuery(), chakraUi(), eslint()],
+        title: 'Topics',
+        tags: [appliedcryptography(), authorization(), internetofthings(), automotive()],
       },
-      links: [website({ url: '#' }), instagram({ url: '#' })],
+      links: [unige({ url: 'https://unige.it/en' }), fbk({ url: 'https://www.fbk.eu/en/' })],
     },
     {
-      role: 'Junior front-end developer',
-      company: 'GitLab',
-      image: import('@/assets/logos/gitlab-logo.png'),
-      dates: [new Date('2016-09'), new Date('2019-04')],
-      description: `
-        Nulla volutpat justo ante, rhoncus posuere massa egestas in:
-
-        - Quisque pellentesque, dolor nec sollicitudin iaculis, sem velit consequat ligula, eget tempus ligula leo et est.
-        - Maecenas ut elit sit amet nibh maximus condimentum in nec lorem. Pellentesque tincidunt odio vel leo suscipit, in interdum mi gravida.
-
-        Donec non vulputate augue 🤓
-      `,
+      role: 'Research Assistant',
+      company: 'Fondazione Bruno Kessler',
+      image: import('@/assets/logos/fbk-logo.png'),
+      dates: [new Date('2018-10'), new Date('2020-10')],
+      description: `Research activities on access control in the Cloud, mobile and automotive security. Research activities on Cooperative, Connected and Automated Mobility (5G-CARMEN project). Study and design of reverse engineering protections for Java and Android Apps`,
       tagsList: {
-        title: 'Technologies',
-        tags: [vue(), tailwindCss(), pnpm()],
+        title: 'Topics',
+        tags: [appliedcryptography(), authorization(), automotive(), reverseengineering()],
+      }, 
+      links: [fbk({ url: 'https://www.fbk.eu/en/' })],
+    },
+    {
+      role: 'Internship',
+      company: '2ASPIRE',
+      image: import('@/assets/logos/2aspire-logo.png'),
+      dates: [new Date('2018-07'), new Date('2018-10')],
+      description: `Research and analysis of best practices against malicious Reverse Engineering (RE) to increase the company's knowhow in Android RE antitampering and anti-debugging protections`,
+      tagsList: {
+        title: 'Topics',
+        tags: [reverseengineering(), android()],
+      }, 
+      links: [],
+    },
+    {
+      role: 'IT Assistant',
+      company: 'University of Trento',
+      image: import('@/assets/logos/unitn-logo.png'),
+      dates: [new Date('2017-07'), new Date('2017-08')],
+      description: `150 hours working contract under the "Information Systems Management" office, Support the deployment of the Digital University project, a new platform serving as Knowledge HUB within the university itself`,
+      tagsList: {
+        title: '',
+        tags: [],
+      }, 
+      links: [unitn({ url: 'https://www.unitn.it/en' })],
+    },
+    {
+      role: 'Internship',
+      company: 'Heas srl',
+      image: import('@/assets/logos/heas-logo.png'),
+      dates: [new Date('2016-06'), new Date('2016-09')],
+      description: `Design of 2 plugins for the web-based SCADA platform ATVISE® in compliance with high-level HMI industrial standards. Developed gestures and tablet-style functionalities, dynamic object instantiation and linking to PLC data`,
+      tagsList: {
+        title: '',
+        tags: [],
       },
-      links: [twitter({ url: '#' }), github({ url: '#' })],
+      links: [linkedin({ url: 'https://www.linkedin.com/company/heas-studio/' })],
     },
   ],
 } as const satisfies ReadonlyDeep<ExperienceSection>;

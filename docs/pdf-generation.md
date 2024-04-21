@@ -9,7 +9,6 @@ PDF generation script takes data from the same files your web resume does. Howev
 
 - For `main-section.data.ts` and projects in `portfolio-section.data.ts` you can define a separate property called `pdfDetails`. If specified, it will be used instead of the `details` to render label-value text paris.
 - Value of the `links` property is ignored. If you want some URLs to be present in PDF, add them as `pdfDetails`.
-- There are no testimonials and favorites sections.
 
 You can also provide your own modifications using [data transformers](./data-transformation.md) in the `pdf.astro` file.
 

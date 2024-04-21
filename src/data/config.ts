@@ -11,14 +11,15 @@ const config = {
     },
   },
   meta: {
-    title: 'Mark Freeman - Senior React Developer',
+    title: 'Stefano Berlato - Computer Scientist, PhD',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales ac dui at vestibulum. In condimentum metus id dui tincidunt, in blandit mi vehicula.',
-    faviconPath: '/src/assets/my-image.jpeg',
+      'Researcher\@FBK, De Cifris member | Keen on cloud security and applied cryptography | Football coach, KH fan, D&D master.',
+    faviconPath: '/src/assets/my-image.jpg',
   },
   pdf: {
     footer:
-      'I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process.',
+      ''
+      //'I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process.',
   },
 } as const satisfies ReadonlyDeep<Config>;
 

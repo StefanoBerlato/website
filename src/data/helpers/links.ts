@@ -11,7 +11,6 @@ Where links are used:
 - main-section.data.ts
 - portfolio-section.data.ts
 - skills-section.data.ts
-- testimonials-section.data.ts
 
 Usage examples:
 link({ url: '...' }) — returns base link object with provided url.
@@ -147,7 +146,6 @@ export const website = createLinkFactory({
   name: 'Website',
   icon: 'fa6-solid:globe',
 });
-
 export const demo = createLinkFactory({
   name: 'App demo',
   icon: 'fa6-solid:desktop',
@@ -161,4 +159,73 @@ export const mockups = createLinkFactory({
 export const repository = createLinkFactory({
   name: 'Repository',
   icon: 'fa6-solid:code-branch',
+});
+
+// RESEARCH
+
+export const scholar = createLinkFactory({
+  name: 'Google Scholar',
+  icon: 'academicons:google-scholar',
+});
+
+export const scopus = createLinkFactory({
+  name: 'Scopus',
+  icon: 'academicons:scopus',
+});
+
+export const orcid = createLinkFactory({
+  name: 'ORCiD',
+  icon: 'academicons:orcid',
+});
+
+export const doi = createLinkFactory({
+  name: 'DOI',
+  icon: 'simple-icons:doi',
+});
+
+export const ieee = createLinkFactory({
+  name: 'IEEE',
+  icon: 'academicons:ieee',
+});
+
+export const acm = createLinkFactory({
+  name: 'ACM',
+  icon: 'academicons:acm',
+});
+
+export const springer = createLinkFactory({
+  name: 'Springer',
+  icon: 'academicons:springer',
+});
+
+export const scitepress = createLinkFactory({
+  name: 'SCITEPRESS',
+  icon: 'tdesign:letters-s',
+});
+
+export const elsevier = createLinkFactory({
+  name: 'ELSEVIER',
+  icon: 'simple-icons:elsevier',
+});
+
+// WORKPLACE
+
+export const fbk = createLinkFactory({
+  name: 'FBK',
+  icon: 'fa6-solid:globe',
+});
+
+export const aleph = createLinkFactory({
+  name: 'ALEPH',
+  icon: 'arcticons:alephbeta',
+});
+
+export const unige = createLinkFactory({
+  name: 'UniGE',
+  icon: 'fa-solid:university',
+});
+
+export const unitn = createLinkFactory({
+  name: 'UniTN',
+  icon: 'fa-solid:university',
 });

@@ -1,21 +1,16 @@
 import type { PortfolioSection } from '@/types/sections/portfolio-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { demo, github, mockups, website } from '../helpers/links';
+import { github, youtube } from '../helpers/links';
 import {
-  chakraUi,
-  eslint,
-  firebase,
-  jest,
-  nestJs,
-  nextJs,
-  nx,
-  pnpm,
-  postgreSql,
-  prettier,
-  react,
-  sass,
-  tailwindCss,
-  typescript,
+  java,
+  apache,
+  sql,
+  android,
+  arduino,
+  bluetooth,
+  raspberry,
+  python,
+  kotlin,
 } from '../helpers/skills';
 
 const portfolioSectionData = {
@@ -29,99 +24,89 @@ const portfolioSectionData = {
       icon: 'fa6-solid:images',
     },
   },
-  projects: [
+  projects: [    {
+    name: 'Kotlin Multiplatform for OpenABE',
+    image: import('@/assets/portfolio/kabe.png'),
+    dates: [new Date('2022-03'), null],
+    details: [
+      { label: 'Team size', value: '1 people' },
+      { label: 'My role', value: 'Developer' },
+      { label: 'Scope', value: 'Open Source Project' },
+      { label: 'Category', value: ['Library', 'Open source'] },
+    ],
+    pdfDetails: [
+      { label: 'Repository', value: '/kABE', url: 'https://github.com/StefanoBerlato/kotlin-multiplatform-openabe' },
+    ],
+    description:
+      'A wrapper allowing to easily use the OpenABE library for Attribute-based Encryption (ABE) from Kotlin multiplatform.',
+    tagsList: {
+      title: 'Technologies',
+      tags: [kotlin()],
+    },
+    links: [github({ url: 'https://github.com/StefanoBerlato/kotlin-multiplatform-openabe' })],
+  },
     {
-      name: 'Golden Bulls',
-      image: import('@/assets/portfolio/project-1.jpeg'),
-      dates: [new Date('2020-03'), null],
+      name: 'Joni',
+      image: import('@/assets/portfolio/joni.png'),
+      dates: [new Date('2018-02'), new Date('2018-07')],
       details: [
-        { label: 'Team size', value: '1 person' },
-        { label: 'My role', value: ['Front-end Developer', 'Designer'] },
-        { label: 'Company', value: 'None' },
-        { label: 'Category', value: ['Web app', 'Open source'] },
+        { label: 'Team size', value: '6 people' },
+        { label: 'My role', value: 'Back-end Developer' },
+        { label: 'Scope', value: 'University Project' },
+        { label: 'Category', value: ['Android app', 'Open source'] },
       ],
       pdfDetails: [
-        { label: 'Demo', value: 'https://golden-bulls-d73jd7.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/golden-bulls', url: '#' },
-      ],
-      screenshots: [
-        { src: import('@/assets/portfolio/project-1-screenshot-1.jpg'), alt: 'First screenshot' },
-        { src: import('@/assets/portfolio/project-1-screenshot-2.jpg'), alt: 'Second screenshot' },
-        { src: import('@/assets/portfolio/project-1-screenshot-3.jpg'), alt: 'Third screenshot' },
+        { label: 'Repository', value: '/joni', url: 'https://github.com/StefanoBerlato/Joni' },
       ],
       description:
-        'In tristique vulputate augue vel egestas. Quisque ac imperdiet tortor, at lacinia ex. Duis vel ex hendrerit, commodo odio sed, aliquam enim. Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi. Nunc malesuada leo et est iaculis facilisis.',
+        'University project for building Joni, a tool meant to help blind and visually impaired people to keep in touch with the world. The project comprised the validation of the business idea through concrete analysis on the field and market research with the goal to make news and podcasts accessible by the blind community.',
       tagsList: {
         title: 'Technologies',
-        tags: [nextJs(), sass(), pnpm(), eslint(), prettier()],
+        tags: [raspberry(), python()],
       },
-      links: [mockups({ url: '#' }), demo({ url: '#' })],
+      links: [github({ url: 'https://github.com/StefanoBerlato/Joni' })],
     },
     {
-      name: 'TruQuest',
-      image: import('@/assets/portfolio/project-2.jpeg'),
-      dates: [new Date('2019-06'), new Date('2020-02')],
-      details: [
-        { label: 'Team size', value: '7 people' },
-        { label: 'My role', value: ['Front-end Developer', 'Mobile Developer', 'Designer'] },
-        { label: 'Company', value: 'Facebook' },
-        { label: 'Category', value: ['Web app', 'Mobile app'] },
-      ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://tru-quest-ck7ea3.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/tru-quest', url: '#' },
-      ],
-      description:
-        'Ut ultricies tortor at sodales aliquam. Vivamus metus ante, fringilla nec ligula in, suscipit rhoncus mauris. Praesent hendrerit velit odio, at accumsan urna faucibus convallis. Nunc at massa eget ligula volutpat dictum a sit amet libero. Vestibulum iaculis molestie maximus. In hac habitasse platea dictumst.',
-      tagsList: {
-        title: 'Technologies',
-        tags: [react(), tailwindCss(), nestJs(), postgreSql()],
-      },
-      links: [mockups({ url: '#' }), demo({ url: '#' })],
-    },
-    {
-      name: 'Software Chasers',
-      image: import('@/assets/portfolio/project-3.jpeg'),
-      dates: [new Date('2018-01'), new Date('2020-12')],
+      name: 'Glumo',
+      image: import('@/assets/portfolio/glumo.png'),
+      dates: [new Date('2017-02'), new Date('2017-06')],
       details: [
         { label: 'Team size', value: '3 people' },
-        { label: 'My role', value: ['Front-end Developer', 'Designer'] },
-        { label: 'Company', value: 'None' },
+        { label: 'My role', value: 'Back-end Developer' },
+        { label: 'Scope', value: 'University Project' },
+        { label: 'Category', value: ['Android app', 'Open source'] },
+      ],
+      pdfDetails: [
+        { label: 'Repository', value: '/glumo', url: 'https://github.com/StefanoBerlato/Glumo' },
+      ],
+      description:
+        'University project for building an Android app, called Glumo, to help people who suffer from diabetes with features like automatic alarms and emergency SMS. The project comprised the design of monitoring services with direct bluetooth connection with modern glycemic sensors.',
+      tagsList: {
+        title: 'Technologies',
+        tags: [android(), arduino(), bluetooth()],
+      },
+      links: [github({ url: 'https://github.com/StefanoBerlato/Glumo' }), youtube({ url: 'https://www.youtube.com/watch?v=D86wqLJcGTc&t=24s' })],
+    },
+    {
+      name: 'Eater',
+      image: import('@/assets/portfolio/eater.png'),
+      dates: [new Date('2016-02'), new Date('2016-06')],
+      details: [
+        { label: 'Team size', value: '5 people' },
+        { label: 'My role', value: 'Back-end Developer' },
+        { label: 'Scope', value: 'University Project' },
         { label: 'Category', value: ['Web app', 'Open source'] },
       ],
       pdfDetails: [
-        { label: 'Demo', value: 'https://software-chasers-e82l8e.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/software-chasers', url: '#' },
+        { label: 'Repository', value: '/eater', url: 'https://github.com/StefanoBerlato/eater' },
       ],
       description:
-        'Quisque id consectetur eros. In hac habitasse platea dictumst. Sed eu pulvinar orci. Mauris consequat, est in dignissim varius, neque nisl commodo mauris, id blandit risus justo eu nulla.',
+        'University project for building a web application for finding and reviewing restaurants. The project comprised the Agile design and development of the web application with a Java backend, the implementation of the Model-View-Control (MVC) and the DAO pattern for decoupling logic and storage.',
       tagsList: {
         title: 'Technologies',
-        tags: [react(), chakraUi(), typescript(), nx(), pnpm()],
+        tags: [java(), apache(), sql()],
       },
-      links: [website({ url: '#' }), github({ url: '#' })],
-    },
-    {
-      name: 'Disco Ninjas',
-      image: import('@/assets/portfolio/project-4.jpeg'),
-      dates: [new Date('2016-05'), new Date('2018-07')],
-      details: [
-        { label: 'Team size', value: '11 people' },
-        { label: 'My role', value: 'Front-end Developer' },
-        { label: 'Company', value: 'Google' },
-        { label: 'Category', value: ['Mobile app', 'Open source'] },
-      ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://disco-ninjas-g321ol.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/disco-ninjas', url: '#' },
-      ],
-      description:
-        'Praesent eu neque tortor. Vestibulum ac magna nisl. Vivamus massa sem, feugiat in pharetra non, convallis egestas purus. Ut consequat ullamcorper sem, in euismod nibh posuere ut. ',
-      tagsList: {
-        title: 'Technologies',
-        tags: [typescript(), jest(), firebase()],
-      },
-      links: [mockups({ url: '#' }), github({ url: '#' })],
+      links: [github({ url: 'https://github.com/StefanoBerlato/eater' })],
     },
   ],
 } as const satisfies ReadonlyDeep<PortfolioSection>;

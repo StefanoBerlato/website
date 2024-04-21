@@ -1,0 +1,14 @@
+---
+import type { PublicationsSection } from '@/types/sections/publications-section.types';
+import Divider from '@/web/components/divider.astro';
+import SectionCard from '@/web/components/section-card.astro';
+import Publications from './publications.astro';
+
+export interface Props extends PublicationsSection {}
+
+const { config, publications } = Astro.props;
+---
+
+<SectionCard {...config}>
+  {publications.flatMap((publication) => [<Publications {...publication} />, <Divider />])}
+</SectionCard>

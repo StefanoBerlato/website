@@ -1,6 +1,6 @@
 import type { EducationSection } from '@/types/sections/education-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { website } from '../helpers/links';
+import { unitn, unige, github } from '../helpers/links';
 
 const educationSectionData = {
   config: {
@@ -11,20 +11,28 @@ const educationSectionData = {
   },
   diplomas: [
     {
-      title: 'Information Technology',
-      institution: 'Wrocław University of Science and Technology',
-      image: import('@/assets/logos/wroclaw-university-of-technology.jpg'),
-      dates: [new Date('2014.10'), new Date('2016.07')],
-      description: 'Master degree. Specialization in software development.',
-      links: [website({ url: '#' })],
+      title: 'PhD',
+      institution: 'University of Genoa \& Fondazione Bruno Kessler',
+      image: import('@/assets/logos/unige-logo.jpg'),
+      dates: [new Date('2020.11'), new Date('2023.10')],
+      description: 'PhD in Security, Risk and Vulnerability, Cybersecurity and Reliable Artificial Intelligence curriculum with the thesis "**A Security Service for Performance-Aware End-to-End Protection of Sensitive Data in Cloud Native Applications**".',
+      links: [unige({ url: 'https://www.unige.it/en' })],
     },
     {
-      title: 'Information Technology',
-      institution: 'Wrocław University of Science and Technology',
-      image: import('@/assets/logos/wroclaw-university-of-technology.jpg'),
-      dates: [new Date('2011.10'), new Date('2014.07')],
-      description: "Bachelor's degree. Specialization in application development.",
-      links: [website({ url: '#' })],
+      title: 'Master degree',
+      institution: 'University of Trento',
+      image: import('@/assets/logos/unitn-logo.png'),
+      dates: [new Date('2017.09'), new Date('2019.07')],
+      description: 'Master degree in Computer Science, ICT Innovation - Security\&Privacy curriculum (110L) with the thesis "**A Pragmatic Approach to Handle \"Honest but Curious\" Cloud Service Providers: Cryptographic Enforcement of Dynamic Access Control Policies**".\n <span style="color:#c0392b;">Awarded 3rd prize at Thesis Award «Innovating information security» 15th edition - 2019, Clusit</span>.',
+      links: [unitn({ url: 'https://www.unitn.it/en' }), github({ url: 'https://github.com/StefanoBerlato/Master-Thesis' })]
+    },
+    {
+      title: 'Bachelor degree',
+      institution: 'University of Trento',
+      image: import('@/assets/logos/unitn-logo.png'),
+      dates: [new Date('2014.09'), new Date('2017.07')],
+      description: 'Bachelor degree in Computer Science (110L) with the thesis "Development of a web based Interface for the Orchestration of Machine Learning Components".',
+      links: [unitn({ url: 'https://www.unitn.it/en' }), github({ url: 'https://github.com/StefanoBerlato/Bachelor-Thesis' })]
     },
   ],
 } as const satisfies ReadonlyDeep<EducationSection>;
