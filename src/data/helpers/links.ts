@@ -61,6 +61,12 @@ export const codesandbox = createLinkFactory({
   icon: 'simple-icons:codesandbox',
 });
 
+// FILES
+
+export const pdf = createLinkFactory({
+  name: 'PDF',
+  icon: 'teenyicons:pdf-solid',
+});
 // BLOG
 
 export const dev = createLinkFactory({
