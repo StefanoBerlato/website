@@ -5,6 +5,7 @@ import type { EducationSection } from './sections/education-section.types';
 import type { ExperienceSection } from './sections/experience-section.types';
 import type { MainSection } from './sections/main-section.types';
 import type { PortfolioSection } from './sections/portfolio-section.types';
+import type { ResearchProjectSection } from './sections/research-project-section.types';
 import type { SkillsSection } from './sections/skills-section.types';
 
 export type Config = {
@@ -41,7 +42,12 @@ export type Sections = {
   experience: ExperienceSection;
 
   /**
-   * Your projects and initiatives.
+   * Your open source projects and initiatives.
+   */
+  researchProject: ResearchProjectSection;
+
+  /**
+   * Your open source projects and initiatives.
    */
   portfolio: PortfolioSection;
 

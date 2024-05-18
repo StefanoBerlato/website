@@ -48,7 +48,7 @@ const thesesSectionData = {
     {
       authors: 'Chaudhry Muhammad Suleman',
       title: 'Cyber-security Risk Assessment for Cooperative, Connected and Automated Mobility: Application to Cooperative Lane Merging',
-      venue: 'master in Computer Science at the University of Trento (2021)',
+      venue: 'Master in Computer Science at the University of Trento (2021)',
       links: [],
     },
   ],

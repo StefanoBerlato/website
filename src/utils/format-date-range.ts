@@ -5,6 +5,12 @@ import config from '@/data/config';
 const { locale, dateFormat, translations } = config.i18n;
 
 const formatDateRange = ([from, to]: DateRange): string =>
-  format(from, dateFormat, { locale }).concat(' - ', to ? format(to, dateFormat, { locale }) : translations.now);
+  (to ? 
+    from.toString() === to.toString() ?
+      format(from, dateFormat, { locale })
+      :
+      format(from, dateFormat, { locale }).concat(' - ', format(to, dateFormat, { locale })) 
+    :
+    format(from, dateFormat, { locale }).concat(' - ', translations.now));
 
 export default formatDateRange;

@@ -8,6 +8,7 @@ import {
   android,
   arduino,
   bluetooth,
+  react,
   raspberry,
   python,
   kotlin,
@@ -15,8 +16,8 @@ import {
 
 const portfolioSectionData = {
   config: {
-    title: 'Projects',
-    slug: 'projects',
+    title: 'Open Source Projects',
+    slug: 'openSourceProjects',
     icon: 'fa6-solid:rocket',
     visible: true,
     screenshots: {
@@ -24,27 +25,28 @@ const portfolioSectionData = {
       icon: 'fa6-solid:images',
     },
   },
-  projects: [    {
-    name: 'Kotlin Multiplatform for OpenABE',
-    image: import('@/assets/portfolio/kabe.png'),
-    dates: [new Date('2022-03'), null],
-    details: [
-      { label: 'Team size', value: '1 people' },
-      { label: 'My role', value: 'Developer' },
-      { label: 'Scope', value: 'Open Source Project' },
-      { label: 'Category', value: ['Library', 'Open source'] },
-    ],
-    pdfDetails: [
-      { label: 'Repository', value: '/kABE', url: 'https://github.com/StefanoBerlato/kotlin-multiplatform-openabe' },
-    ],
-    description:
-      'A wrapper allowing to easily use the OpenABE library for Attribute-based Encryption (ABE) from Kotlin multiplatform.',
-    tagsList: {
-      title: 'Technologies',
-      tags: [kotlin()],
+  openSourceProjects: [
+    {
+      name: 'Kotlin Multiplatform for OpenABE',
+      image: import('@/assets/portfolio/kabe.png'),
+      dates: [new Date('2022-03'), null],
+      details: [
+        { label: 'Team size', value: '1 people' },
+        { label: 'My role', value: 'Developer' },
+        { label: 'Scope', value: 'Open Source Project' },
+        { label: 'Category', value: ['Library', 'Open source'] },
+      ],
+      pdfDetails: [
+        { label: 'Repository', value: '/kABE', url: 'https://github.com/StefanoBerlato/kotlin-multiplatform-openabe' },
+      ],
+      description:
+        'A wrapper allowing to easily use the OpenABE library for Attribute-based Encryption (ABE) from Kotlin multiplatform.',
+      tagsList: {
+        title: 'Technologies',
+        tags: [kotlin(), react()],
+      },
+      links: [github({ url: 'https://github.com/StefanoBerlato/kotlin-multiplatform-openabe' })],
     },
-    links: [github({ url: 'https://github.com/StefanoBerlato/kotlin-multiplatform-openabe' })],
-  },
     {
       name: 'Joni',
       image: import('@/assets/portfolio/joni.png'),

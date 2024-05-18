@@ -11,6 +11,12 @@ const publicationsSectionData = {
   },
   publications: [
     {
+      authors: 'Stefano Berlato, Matteo Rizzi, Matteo Franzil, Silvio Cretti, Pietro De Matteis, Roberto Carbone',
+      title: 'Work-in-Progress: A Sidecar Proxy for Usable and Performance-Adaptable End-to-End Protection of Communications in Cloud Native Applications',
+      venue: 'in 1st Workshop on Operating Systems and Virtualization Security (OSVS 2024)',
+      links: [pdf({ url: 'publications/OSVS2024.pdf' })],
+    },
+    {
       authors: 'Stefano Berlato, Silvio Cretti, Domenico Siracusa, Silvio Ranise',
       title: 'Multi-Objective Microservice Orchestration: Balancing Security and Performance in CCAM',
       venue: 'in 27th Conference on Innovation in Clouds, Internet and Networks (ICIN 2024)',

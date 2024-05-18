@@ -1,6 +1,6 @@
 ---
 import { nanoid } from 'nanoid';
-import type { PortfolioSection, Project } from '@/types/sections/portfolio-section.types';
+import type { ResearchProjectSection, ResearchProject } from '@/types/sections/research-project-section.types';
 import Description from '@/web/components/description.astro';
 import LabelledValue from '@/web/components/labelled-value.astro';
 import LinkButton from '@/web/components/link-button.astro';
@@ -10,13 +10,13 @@ import Timestamp from '@/web/components/timestamp.astro';
 import Typography from '@/web/components/typography.astro';
 import Thumbnail from '@/web/components/thumbnail.astro';
 
-export interface Props extends Project {
-  screenshotsConfig?: PortfolioSection['config']['screenshots'];
+export interface Props extends ResearchProject {
+  screenshotsConfig?: ResearchProjectSection['config']['screenshots'];
 }
 
 const { dates, description, details, image, links, name, tagsList, screenshots, screenshotsConfig } = Astro.props;
 
-const alt = `${name} project thumbnail`;
+const alt = `${name} researchProject thumbnail`;
 
 const galleryId = nanoid(8);
 const hasScreenshots = screenshots?.length && screenshots.length > 0;

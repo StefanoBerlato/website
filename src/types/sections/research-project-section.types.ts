@@ -12,7 +12,7 @@ interface Screenshot {
   alt: string;
 }
 
-export interface OpenSourceProject {
+export interface ResearchProject {
   /**
    * Name of the open source project.
    */
@@ -68,11 +68,11 @@ export interface OpenSourceProject {
   links: LinkButton[];
 }
 
-export interface PortfolioSection extends Section {
+export interface ResearchProjectSection extends Section {
   /**
    * List of your open source projects in a chronological order. Start with the most recent one.
    */
-  openSourceProjects: OpenSourceProject[];
+  researchProjects: ResearchProject[];
 
   config: Section['config'] & {
     /**

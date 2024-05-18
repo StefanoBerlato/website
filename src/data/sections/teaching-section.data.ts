@@ -1,10 +1,10 @@
 import type { TeachingSection } from '@/types/sections/teaching-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { unitn, unige } from '../helpers/links';
+import { unitn, unige, website } from '../helpers/links';
 
 const teachingSectionData = {
   config: {
-    title: 'Teaching',
+    title: 'Teaching, Seminars, and Outreach Events',
     slug: 'teaching',
     icon: 'mdi:teaching',
     visible: true,
@@ -15,18 +15,43 @@ const teachingSectionData = {
       institution: 'University of Trento',
       image: import('@/assets/logos/unitn-logo.png'),
       dates: [new Date('2020.09'), null],
-      description: 'Teaching Assistant for the Computer Science course "Programmazione 1".',
+      description: 'Teaching Assistant for the Computer Science course "Programmazione 1"; preparation of lectures and exams, marking and grading of exams.',
       links: [unitn({ url: 'https://www.unitn.it/en' })],
+    },
+    {
+      title: 'Seminar',
+      institution: 'I.I.S.TRON ZANELLA',
+      image: import('@/assets/logos/tron.png'),
+      dates: [new Date('2024.02'), new Date('2024.02')],
+      description: 'Seminar "I Perché e i Come della Ricerca: Il Lavoro del Ricercatore nel Campo della Sicurezza Informatica" at the Tron-Zanella high school.',
+      links: [website({ url: 'https://www.tronzanella.edu.it/' })],
     },
     {
       title: 'Teacher',
       institution: 'University of Genoa',
       image: import('@/assets/logos/unige-logo.jpg'),
       dates: [new Date('2023.10'), new Date('2023.11')],
-      description: "Teacher at the Cybersecurity and Critical Infrastructure Protection Master",
+      description: 'Lectures in advanced applications for access control in the "Cybersecurity and Critical Infrastructure Protection" professional specialization course.',
       links: [unige({ url: 'https://www.unige.it/en' })],
+    },
+    {
+      title: 'Guest Lecturer',
+      institution: 'University of Trento',
+      image: import('@/assets/logos/unitn-logo.png'),
+      dates: [new Date('2023.05'), new Date('2023.05')],
+      description: 'Guest lecture in data security for applications based on cloud-edge computing in the "Fog and Cloud Computing" master course at the University of Trento.',
+      links: [unitn({ url: 'https://www.unitn.it/en' })],
+    },
+    {
+      title: 'Guest Lecturer',
+      institution: 'University of Genoa',
+      image: import('@/assets/logos/unige-logo.jpg'),
+      dates: [new Date('2022.04'), new Date('2023.03')],
+      description: 'Guest lecture in zero trust in authorization – cryptographic enforcement of access control policies – in the "Digital Identity: Enrollment, Authentication, and All That" PhD course at the University of Genoa.',
+      links: [unige({ url: 'https://www.unitn.it/en' })],
     }
   ],
 } as const satisfies ReadonlyDeep<TeachingSection>;
 
 export default teachingSectionData;
+

@@ -9,14 +9,14 @@ import TagsList from '../components/tags-list.astro';
 
 export interface Props extends PortfolioSection {}
 
-const { config, projects } = Astro.props;
+const { config, openSourceProjects } = Astro.props;
 ---
 
 <div>
   <SectionHeading>{config.title}</SectionHeading>
   <div class="flex flex-col">
     {
-      projects.map(({ name, description, details, pdfDetails, tagsList, dates }) => () => (
+      openSourceProjects.map(({ name, description, details, pdfDetails, tagsList, dates }) => () => (
         <>
           <div class="flex flex-col gap-2">
             <ListItemHeading title={name} dates={dates} />

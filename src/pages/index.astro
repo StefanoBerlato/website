@@ -6,11 +6,12 @@ import MainSection from '@/web/sections/main/main-section.web.astro';
 import SkillsSection from '@/web/sections/skills/skills-section.web.astro';
 import ExperienceSection from '@/web/sections/experience/experience-section.web.astro';
 import EducationSection from '@/web/sections/education/education-section.web.astro';
+import ResearchProjectSection from '@/web/sections/researchProject/research-project-section.web.astro';
 import TeachingSection from '@/web/sections/teaching/teaching-section.web.astro';
 import PublicationsSection from '@/web/sections/publications/publications-section.web.astro';
 import ThesesSection from '@/web/sections/theses/theses-section.web.astro';
 import PortfolioSection from '@/web/sections/portfolio/portfolio-section.web.astro';
-import ReviewsSection from '@/web/sections/reviews/reviews-section.web.astro';
+import ServiceSection from '@/web/sections/service/service-section.web.astro';
 import cv from '@/data';
 
 const { config, sections } = cv();
@@ -23,11 +24,12 @@ const { config, sections } = cv();
     <SkillsSection {...sections.skills} />
     <ExperienceSection {...sections.experience} />
     <EducationSection {...sections.education} />
+    <ResearchProjectSection {...sections.researchProject} />
     <TeachingSection {...sections.teaching} />
     <PublicationsSection {...sections.publications} />
     <ThesesSection {...sections.theses} />
     <PortfolioSection {...sections.portfolio} />
-    <ReviewsSection {...sections.reviews} />
+    <ServiceSection {...sections.service} />
   </main>
   <Sidebar sections={sections} className="sticky top-8 mt-20" />
   <script src="../web/scripts/initialize-tooltips.ts"></script>
