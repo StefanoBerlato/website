@@ -8,6 +8,7 @@ const mainSectionData = {
     title: 'Profile',
     slug: 'profile',
     visible: true,
+    showSelectedOnly: false,
   },
   image: import('@/assets/my-image.jpg'),
   fullName: 'Stefano Berlato',

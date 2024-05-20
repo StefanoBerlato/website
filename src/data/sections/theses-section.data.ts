@@ -7,6 +7,7 @@ const thesesSectionData = {
     slug: 'theses',
     icon: 'ic:round-supervisor-account',
     visible: true,
+    showSelectedOnly: false,
   },
   theses: [
     {

@@ -8,6 +8,7 @@ const educationSectionData = {
     slug: 'education',
     icon: 'fa6-solid:graduation-cap',
     visible: true,
+    showSelectedOnly: false,
   },
   diplomas: [
     {

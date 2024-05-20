@@ -40,6 +40,11 @@ export interface Job {
    * [WEB] Links related to your job (e.g. production app, company's website, project website).
    */
   links: LinkButton[];
+
+  /**
+   * [WEB] If true, always show the publication, otherwise show only in the complete list of publications.
+   */
+  selected: boolean;
 }
 
 export interface ExperienceSection extends Section {

@@ -20,6 +20,7 @@ const researchProjectSectionData = {
     slug: 'researchProjects',
     icon: 'pepicons-pop:earth-europe',
     visible: true,
+    showSelectedOnly: false,
     screenshots: {
       title: 'Screenshots',
       icon: 'fa6-solid:images',

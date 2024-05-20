@@ -18,6 +18,7 @@ const skillsSectionData = {
     slug: 'research',
     icon: 'fa6-solid:bars-progress',
     visible: true,
+    showSelectedOnly: false,
   },
   skillSets: [
     {

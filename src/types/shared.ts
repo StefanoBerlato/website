@@ -44,6 +44,11 @@ export interface SectionConfig {
    * Should section be displayed on the page.
    */
   visible: boolean;
+
+  /**
+   * Should section display show selected only button.
+   */
+  showSelectedOnly: boolean;
 }
 
 export interface Section {

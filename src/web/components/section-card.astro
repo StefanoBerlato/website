@@ -1,5 +1,6 @@
 ---
 import type { SectionConfig } from '@/types/shared';
+import ShowSelectedOnlyToggle from '@/web/components/show-selected-only-toggle.astro';
 import Typography from './typography.astro';
 
 export interface Props extends SectionConfig {
@@ -7,7 +8,7 @@ export interface Props extends SectionConfig {
   hideTitle?: boolean;
 }
 
-const { title, slug, hideTitle, className, visible } = Astro.props;
+const { title, slug, hideTitle, className, visible, showSelectedOnly } = Astro.props;
 ---
 
 {
@@ -17,7 +18,12 @@ const { title, slug, hideTitle, className, visible } = Astro.props;
       data-type="section"
       class:list={['flex flex-col gap-6 rounded-2xl bg-white p-8 shadow-md dark:bg-gray-800', className]}
     >
-      {!hideTitle && <Typography variant="section-title">{title}</Typography>}
+      <div
+        class:list={['flex', className]}
+      >
+        {!hideTitle && <Typography variant="section-title">{title}</Typography>}
+        {showSelectedOnly && <ShowSelectedOnlyToggle title={title} relatedTo={slug} />}
+      </div>
       <slot />
     </div>
   )

@@ -8,6 +8,7 @@ const teachingSectionData = {
     slug: 'teaching',
     icon: 'mdi:teaching',
     visible: true,
+    showSelectedOnly: false,
   },
   teaching: [
     {
@@ -31,7 +32,7 @@ const teachingSectionData = {
       institution: 'University of Genoa',
       image: import('@/assets/logos/unige-logo.jpg'),
       dates: [new Date('2023.10'), new Date('2023.11')],
-      description: 'Lectures in advanced applications for access control in the "Cybersecurity and Critical Infrastructure Protection" professional specialization course.',
+      description: 'Lecturer in advanced applications for access control in the "Cybersecurity and Critical Infrastructure Protection" professional specialization course.',
       links: [unige({ url: 'https://www.unige.it/en' })],
     },
     {

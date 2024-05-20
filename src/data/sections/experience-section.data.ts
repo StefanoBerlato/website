@@ -20,6 +20,7 @@ const experienceSectionData = {
     slug: 'experience',
     icon: 'fa6-solid:suitcase',
     visible: true,
+    showSelectedOnly: false,
   },
   jobs: [
     {
@@ -33,6 +34,7 @@ const experienceSectionData = {
         tags: [appliedcryptography(), authentication(), authorization(), devsecops(), cloudnative(), kotlin()],
       },    
       links: [fbk({ url: 'https://www.fbk.eu/en/' }), aleph({ url: 'https://aleph.fbk.eu/' })],
+      selected: true,
     },
     {
       role: 'PhD Student',
@@ -45,6 +47,7 @@ const experienceSectionData = {
         tags: [appliedcryptography(), authorization(), internetofthings(), automotive()],
       },
       links: [unige({ url: 'https://unige.it/en' }), fbk({ url: 'https://www.fbk.eu/en/' })],
+      selected: true,
     },
     {
       role: 'Research Assistant',
@@ -57,9 +60,10 @@ const experienceSectionData = {
         tags: [appliedcryptography(), authorization(), automotive(), reverseengineering()],
       }, 
       links: [fbk({ url: 'https://www.fbk.eu/en/' })],
+      selected: true,
     },
     {
-      role: 'Internship',
+      role: 'Intern',
       company: '2ASPIRE',
       image: import('@/assets/logos/2aspire-logo.png'),
       dates: [new Date('2018-07'), new Date('2018-10')],
@@ -69,21 +73,23 @@ const experienceSectionData = {
         tags: [reverseengineering(), android()],
       }, 
       links: [],
+      selected: true,
     },
     {
       role: 'IT Assistant',
       company: 'University of Trento',
       image: import('@/assets/logos/unitn-logo.png'),
       dates: [new Date('2017-07'), new Date('2017-08')],
-      description: `150 hours working contract under the "Information Systems Management" office, Support the deployment of the Digital University project, a new platform serving as Knowledge HUB within the university itself.`,
+      description: `150 hours working contract under the "Information Systems Management" office, Support the deployment of the Digital University project, a new platform serving as Knowledge HUB within the University of Trento.`,
       tagsList: {
         title: '',
         tags: [],
       }, 
       links: [unitn({ url: 'https://www.unitn.it/en' })],
+      selected: false,
     },
     {
-      role: 'Internship',
+      role: 'Intern',
       company: 'Heas srl',
       image: import('@/assets/logos/heas-logo.png'),
       dates: [new Date('2016-06'), new Date('2016-09')],
@@ -93,6 +99,7 @@ const experienceSectionData = {
         tags: [],
       },
       links: [linkedin({ url: 'https://www.linkedin.com/company/heas-studio/' })],
+      selected: false,
     },
   ],
 } as const satisfies ReadonlyDeep<ExperienceSection>;

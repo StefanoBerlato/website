@@ -20,6 +20,7 @@ const portfolioSectionData = {
     slug: 'openSourceProjects',
     icon: 'fa6-solid:rocket',
     visible: true,
+    showSelectedOnly: false,
     screenshots: {
       title: 'Screenshots',
       icon: 'fa6-solid:images',

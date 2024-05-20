@@ -111,7 +111,7 @@ export const bluetooth = createSkillFactory({
 });
 
 export const raspberry = createSkillFactory({
-  name: 'Raspberry',
+  name: 'Raspberry Pi',
   icon: 'grommet-icons:raspberry',
   iconColor: '#CC6699',
 });

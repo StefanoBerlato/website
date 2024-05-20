@@ -1,0 +1,92 @@
+---
+import Icon from './icon.astro';
+
+export interface Props {
+  relatedTo: string;
+  title: string;
+}
+
+const { relatedTo, title } = Astro.props;
+---
+
+<astro-button 
+  data-relatedtovalue={relatedTo}
+  data-titlevalue={title.toLowerCase()}
+  style="margin-left: auto;"
+>
+  <button
+    id={`show-selected-only-button-${relatedTo}`}
+    aria-label={`Show selected only button for ${title.toLowerCase()}`}
+    data-tooltip={`Click to show selected ${title.toLowerCase()} only`}
+    class="flex items-center justify-center w-7 h-7 rounded text-gray-400 bg-gray-100 dark:bg-gray-600 dark:text-gray-200 active:translate-y-px focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+  >
+    <Icon 
+      id={`all-show-selected-only-button-${relatedTo}`}
+      class="block dark:hidden" 
+      name="material-symbols:workspace-premium" 
+      size={20} 
+    />
+    <Icon 
+      id={`selected-show-selected-only-button-${relatedTo}`}
+      class="hidden dark:block" 
+      name="gg:list" 
+      size={20} 
+    />
+  </button>
+</astro-button>
+
+<script>
+
+  var relatedTo = '';
+  var title = '';
+
+  const buttonSelectedOnly = () => {
+      const selectedOnlyState = localStorage.getItem('selected-only-state-for-' + relatedTo) ?? 'all';
+      const newSelectedOnlyState = selectedOnlyState === 'all' ? 'selected only' : 'all';
+
+      const divContainer = document.getElementById(relatedTo);
+      for (var i = 0; i < divContainer.children.length; i++) {
+          if (divContainer.children[i].classList.contains("selected-false") && newSelectedOnlyState == 'selected only') {
+            divContainer.children[i].style.display = 'none';
+            divContainer.children[i+1].style.display = 'none';
+          } 
+          else if ((divContainer.children[i].classList.contains("selected-false") || divContainer.children[i].classList.contains("selected-true")) && newSelectedOnlyState == 'all') {
+            divContainer.children[i].style.display = 'block';
+            if (i+1 != divContainer.children.length-1) {
+              divContainer.children[i+1].style.display = 'block'; 
+            }
+          }
+      }
+
+      if (newSelectedOnlyState == 'selected only') {
+        var tooltipID = document.getElementById('show-selected-only-button-' + relatedTo).getAttribute('aria-describedby');
+        document.getElementById(tooltipID).innerHTML = 'Click to show all ' + title;
+        document.getElementById('all-show-selected-only-button-' + relatedTo).style.display = 'none';
+        document.getElementById('selected-show-selected-only-button-' + relatedTo).style.display = 'block';
+      } else {
+        var tooltipID = document.getElementById('show-selected-only-button-' + relatedTo).getAttribute('aria-describedby');
+        document.getElementById(tooltipID).innerHTML = 'Click to show selected ' + title + ' only';
+        document.getElementById('all-show-selected-only-button-' + relatedTo).style.display = 'block';
+        document.getElementById('selected-show-selected-only-button-' + relatedTo).style.display = 'none';
+      }
+      
+      localStorage.setItem('selected-only-state-for-' + relatedTo, newSelectedOnlyState);
+    };
+
+  class AstroButton extends HTMLElement {
+    constructor() {
+      super();
+
+      // Read the data from the data attributes.
+      relatedTo = this.dataset.relatedtovalue;
+      title = this.dataset.titlevalue;
+
+      const selectedOnlyButton = document.getElementById('show-selected-only-button-' + relatedTo)!;
+      selectedOnlyButton.addEventListener('click', buttonSelectedOnly);
+
+      localStorage.setItem('selected-only-state-for-' + relatedTo, 'all');
+    }
+  }
+
+  customElements.define('astro-button', AstroButton);
+</script>

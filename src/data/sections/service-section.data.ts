@@ -7,6 +7,7 @@ const serviceSectionData = {
     slug: 'service',
     icon: 'material-symbols:rate-review-outline',
     visible: true,
+    showSelectedOnly: false,
   },
   service: [
     {
