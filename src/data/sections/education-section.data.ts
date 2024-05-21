@@ -24,7 +24,7 @@ const educationSectionData = {
       institution: 'University of Trento',
       image: import('@/assets/logos/unitn-logo.png'),
       dates: [new Date('2017.09'), new Date('2019.07')],
-      description: 'Master degree in Computer Science, ICT Innovation - Security\&Privacy curriculum (110L) with the thesis "**A Pragmatic Approach to Handle \"Honest but Curious\" Cloud Service Providers: Cryptographic Enforcement of Dynamic Access Control Policies**".\n <span style="color:#2980b9; font-weight: bold;">Awarded 3rd prize at Thesis Award «Innovating information security» 15th edition - 2019, Clusit</span>.',
+      description: 'Master degree in Computer Science, ICT Innovation - Security\&Privacy curriculum (110 cum laude) with the thesis "**A Pragmatic Approach to Handle \"Honest but Curious\" Cloud Service Providers: Cryptographic Enforcement of Dynamic Access Control Policies**".\n <span style="color:#2980b9; font-weight: bold;">Awarded 3rd prize at Thesis Award «Innovating information security» 15th edition - 2019, Clusit</span>.',
       links: [unitn({ url: 'https://www.unitn.it/en' }), github({ url: 'https://github.com/StefanoBerlato/Master-Thesis' })]
     },
     {
@@ -32,7 +32,7 @@ const educationSectionData = {
       institution: 'University of Trento',
       image: import('@/assets/logos/unitn-logo.png'),
       dates: [new Date('2014.09'), new Date('2017.07')],
-      description: 'Bachelor degree in Computer Science (110L) with the thesis "Development of a web based Interface for the Orchestration of Machine Learning Components".',
+      description: 'Bachelor degree in Computer Science (110 cum laude) with the thesis "**Development of a web based Interface for the Orchestration of Machine Learning Components**".',
       links: [unitn({ url: 'https://www.unitn.it/en' }), github({ url: 'https://github.com/StefanoBerlato/Bachelor-Thesis' })]
     },
   ],

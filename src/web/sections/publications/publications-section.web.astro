@@ -7,8 +7,9 @@ import Publications from './publications.astro';
 export interface Props extends PublicationsSection {}
 
 const { config, publications } = Astro.props;
+const size = publications.length;
 ---
 
-<SectionCard {...config}>
+<SectionCard {...config} counter={size}>
   {publications.flatMap((publication) => [<Publications {...publication} />, <Divider />])}
 </SectionCard>

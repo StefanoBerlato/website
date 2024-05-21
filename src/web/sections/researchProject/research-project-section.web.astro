@@ -8,9 +8,10 @@ import ResearchProject from './researchProject.astro';
 export interface Props extends ResearchProjectSection {}
 
 const { config, researchProjects } = Astro.props;
+const size = researchProjects.length;
 ---
 
-<SectionCard {...config}>
+<SectionCard {...config} counter={size}>
   <DividedList>
     {researchProjects.flatMap((researchProject) => [<ResearchProject {...researchProject} screenshotsConfig={config.screenshots} />, <Divider />])}
   </DividedList>

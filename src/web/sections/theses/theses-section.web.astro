@@ -7,8 +7,9 @@ import Theses from './theses.astro';
 export interface Props extends ThesesSection {}
 
 const { config, theses } = Astro.props;
+const size = theses.length;
 ---
 
-<SectionCard {...config}>
-  {theses.flatMap((publication) => [<Theses {...publication} />, <Divider />])}
+<SectionCard {...config} counter={size} >
+  {theses.flatMap((thesis) => [<Theses {...thesis} />, <Divider />])}
 </SectionCard>

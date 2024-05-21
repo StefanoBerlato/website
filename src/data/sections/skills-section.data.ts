@@ -36,18 +36,14 @@ const skillsSectionData = {
           level: 3,
           description: 'Multi-factor authentication, OpenID Connect, FIDO.',
         }),
-        reverseengineering({
+        cloudnative({
           level: 2,
-          description: 'Android, Java, anti-debugging.',
         }),
       ],
     },
     {
       title: 'Will work on',
       skills: [
-        cloudnative({
-          level: 2,
-        }),
         devsecops({
           level: 1,
         }),
@@ -61,6 +57,10 @@ const skillsSectionData = {
         }),
         automotive({
           level: 3,
+        }),
+        reverseengineering({
+          level: 2,
+          description: 'Android, Java, anti-debugging.',
         }),
         android({
           level: 3,

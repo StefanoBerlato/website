@@ -8,9 +8,10 @@ import OpenSourceProject from './openSourceProject.astro';
 export interface Props extends PortfolioSection {}
 
 const { config, openSourceProjects } = Astro.props;
+const size = openSourceProjects.length;
 ---
 
-<SectionCard {...config}>
+<SectionCard {...config} counter={size}>
   <DividedList>
     {openSourceProjects.flatMap((openSourceProject) => [<OpenSourceProject {...openSourceProject} screenshotsConfig={config.screenshots} />, <Divider />])}
   </DividedList>

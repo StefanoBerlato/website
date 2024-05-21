@@ -30,7 +30,7 @@ const researchProjectSectionData = {
     {
       name: 'SERICS',
       image: import('@/assets/researchProject/serics.png'),
-      dates: [new Date('2018-11'), new Date('2021-10')],
+      dates: [new Date('2023-01'), null],
       details: [
         { label: 'Consortium', value: '24 partners' },
         { label: 'My role', value: 'Contributor' },
