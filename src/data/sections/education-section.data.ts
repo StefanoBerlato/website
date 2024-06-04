@@ -1,6 +1,6 @@
 import type { EducationSection } from '@/types/sections/education-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { unitn, unige, github } from '../helpers/links';
+import { unitn, pdf, unige, github } from '../helpers/links';
 
 const educationSectionData = {
   config: {
@@ -17,7 +17,7 @@ const educationSectionData = {
       image: import('@/assets/logos/unige-logo.jpg'),
       dates: [new Date('2020.11'), new Date('2023.10')],
       description: 'PhD in Security, Risk and Vulnerability, Cybersecurity and Reliable Artificial Intelligence curriculum with the thesis "**A Security Service for Performance-Aware End-to-End Protection of Sensitive Data in Cloud Native Applications**".',
-      links: [unige({ url: 'https://www.unige.it/en' })],
+      links: [pdf({ url: 'theses/thesis_phd.pdf' }), unige({ url: 'https://www.unige.it/en' })],
     },
     {
       title: 'Master degree',
@@ -25,7 +25,7 @@ const educationSectionData = {
       image: import('@/assets/logos/unitn-logo.png'),
       dates: [new Date('2017.09'), new Date('2019.07')],
       description: 'Master degree in Computer Science, ICT Innovation - Security\&Privacy curriculum (110 cum laude) with the thesis "**A Pragmatic Approach to Handle \"Honest but Curious\" Cloud Service Providers: Cryptographic Enforcement of Dynamic Access Control Policies**".\n <span style="color:#2980b9; font-weight: bold;">Awarded 3rd prize at Thesis Award «Innovating information security» 15th edition - 2019, Clusit</span>.',
-      links: [unitn({ url: 'https://www.unitn.it/en' }), github({ url: 'https://github.com/StefanoBerlato/Master-Thesis' })]
+      links: [pdf({ url: 'theses/thesis_master.pdf' }), unitn({ url: 'https://www.unitn.it/en' }), github({ url: 'https://github.com/StefanoBerlato/Master-Thesis' })]
     },
     {
       title: 'Bachelor degree',
@@ -33,7 +33,7 @@ const educationSectionData = {
       image: import('@/assets/logos/unitn-logo.png'),
       dates: [new Date('2014.09'), new Date('2017.07')],
       description: 'Bachelor degree in Computer Science (110 cum laude) with the thesis "**Development of a web based Interface for the Orchestration of Machine Learning Components**".',
-      links: [unitn({ url: 'https://www.unitn.it/en' }), github({ url: 'https://github.com/StefanoBerlato/Bachelor-Thesis' })]
+      links: [pdf({ url: 'theses/thesis_bachelor.pdf' }), unitn({ url: 'https://www.unitn.it/en' }), github({ url: 'https://github.com/StefanoBerlato/Bachelor-Thesis' })]
     },
   ],
 } as const satisfies ReadonlyDeep<EducationSection>;

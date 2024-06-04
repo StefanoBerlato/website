@@ -21,7 +21,7 @@ const teachingSectionData = {
     },
     {
       title: 'Seminar',
-      institution: 'I.I.S.TRON ZANELLA',
+      institution: 'I.I.S. TRON ZANELLA',
       image: import('@/assets/logos/tron.png'),
       dates: [new Date('2024.02'), new Date('2024.02')],
       description: 'Seminar "I Perché e i Come della Ricerca: Il Lavoro del Ricercatore nel Campo della Sicurezza Informatica" at the Tron-Zanella high school.',
