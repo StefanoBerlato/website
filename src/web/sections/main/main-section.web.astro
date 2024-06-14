@@ -24,7 +24,6 @@ const { action, config, description, details, fullName, image, links, role, tags
         height={320}
         class="h-24 w-24 max-w-none rounded-lg sm:h-36 sm:w-36 md:h-52 md:w-52"
       />
-      <DownloadButton {...action} />
     </div>
     <div class="flex w-full flex-col gap-5">
       <div class="flex w-full flex-col justify-between gap-2 sm:flex-row">
@@ -43,14 +42,21 @@ const { action, config, description, details, fullName, image, links, role, tags
         }
       </div>
       <div class="flex flex-col gap-6">
-        <div class="inline-grid xl:grid-cols-[auto_auto]">
+        <!--<div class="inline-grid xl:grid-cols-[auto_auto]">
           {details.map((detail) => <LabelledValue {...detail} />)}
         </div>
+        -->
         <div class="flex flex-col gap-4">
           <Description content={description} />
           <TagsList tags={tags} />
         </div>
       </div>
     </div>
+  </div>
+  <div class="flex gap-4 sm:flex-col">
+    <!--<DownloadButton {...action} />-->
+    <span style="font-family: monospace, monospace; text-align: right;" class="text-base font-normal text-gray-500">
+      Last update: 14 June 2024
+    </span>
   </div>
 </SectionCard>

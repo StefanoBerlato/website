@@ -1,6 +1,6 @@
 import type { ExperienceSection } from '@/types/sections/experience-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { fbk, aleph, unige, unitn, github, instagram, linkedin, twitter, website } from '../helpers/links';
+import { fbk, aleph, unige, none, unitn, github, instagram, linkedin, twitter, website } from '../helpers/links';
 import {
   cloudnative,
   kotlin,
@@ -82,8 +82,8 @@ const experienceSectionData = {
       dates: [new Date('2017-07'), new Date('2017-08')],
       description: `150 hours working contract under the "Information Systems Management" office, Support the deployment of the Digital University project, a new platform serving as Knowledge HUB within the University of Trento.`,
       tagsList: {
-        title: '',
-        tags: [],
+        title: 'Topics',
+        tags: [none()],
       }, 
       links: [unitn({ url: 'https://www.unitn.it/en' })],
       selected: false,
@@ -95,8 +95,8 @@ const experienceSectionData = {
       dates: [new Date('2016-06'), new Date('2016-09')],
       description: `Design of 2 plugins for the web-based SCADA platform ATVISE® in compliance with high-level HMI industrial standards. Developed gestures and tablet-style functionalities, dynamic object instantiation and linking to PLC data.`,
       tagsList: {
-        title: '',
-        tags: [],
+        title: 'Topics',
+        tags: [none()],
       },
       links: [linkedin({ url: 'https://www.linkedin.com/company/heas-studio/' })],
       selected: false,

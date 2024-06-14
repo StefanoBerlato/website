@@ -1,12 +1,16 @@
 ---
 import Fonts from '@/components/fonts.astro';
 import Footer from '@/pdf/components/footer.astro';
-import EducationSection from '@/pdf/sections/education-section.pdf.astro';
-import ExperienceSection from '@/pdf/sections/experience-section.pdf.astro';
 import MainSection from '@/pdf/sections/main-section.pdf.astro';
-import PortfolioSection from '@/pdf/sections/portfolio-section.pdf.astro';
 import SkillsSection from '@/pdf/sections/skills-section.pdf.astro';
-
+import ExperienceSection from '@/pdf/sections/experience-section.pdf.astro';
+import EducationSection from '@/pdf/sections/education-section.pdf.astro';
+import ResearchProjectSection from '@/pdf/sections/research-project-section.pdf.astro';
+import TeachingSection from '@/pdf/sections/teaching-section.pdf.astro';
+import PublicationsSection from '@/pdf/sections/publications-section.pdf.astro';
+import ThesesSection from '@/pdf/sections/theses-section.pdf.astro';
+import PortfolioSection from '@/pdf/sections/portfolio-section.pdf.astro';
+import ServiceSection from '@/pdf/sections/service-section.pdf.astro';
 import cv from '@/data';
 
 const { config, sections } = cv();
@@ -26,8 +30,13 @@ const shouldRenderSection = (section: keyof typeof sections) => sections[section
     {shouldRenderSection('main') && <MainSection {...sections.main} />}
     {shouldRenderSection('skills') && <SkillsSection {...sections.skills} />}
     {shouldRenderSection('experience') && <ExperienceSection {...sections.experience} />}
-    {shouldRenderSection('portfolio') && <PortfolioSection {...sections.portfolio} />}
     {shouldRenderSection('education') && <EducationSection {...sections.education} />}
+    {shouldRenderSection('researchProject') && <ResearchProjectSection {...sections.researchProject} />}
+    {shouldRenderSection('teaching') && <TeachingSection {...sections.teaching} />}
+    {shouldRenderSection('publications') && <PublicationsSection {...sections.publications} />}
+    {shouldRenderSection('theses') && <ThesesSection {...sections.theses} />}
+    {shouldRenderSection('portfolio') && <PortfolioSection {...sections.portfolio} />}
+    {shouldRenderSection('service') && <ServiceSection {...sections.service} />}
     {config.pdf?.footer && <Footer>{config.pdf.footer}</Footer>}
   </body>
 </html>

@@ -19,6 +19,21 @@ link({ name: '...', url: '...' }) — returns link object with a custom name.
 
 // GENERAL
 
+export const none = createLinkFactory({
+  name: 'None',
+  icon: 'ph:empty',
+});
+
+export const cv = createLinkFactory({
+  name: 'Curriculum Vitae',
+  icon: 'academicons:cv',
+});
+
+export const mail = createLinkFactory({
+  name: 'Email',
+  icon: 'material-symbols:mail-outline',
+});
+
 export const facebook = createLinkFactory({
   name: 'Facebook',
   icon: 'fa6-brands:facebook-f',
@@ -152,6 +167,7 @@ export const website = createLinkFactory({
   name: 'Website',
   icon: 'fa6-solid:globe',
 });
+
 export const demo = createLinkFactory({
   name: 'App demo',
   icon: 'fa6-solid:desktop',

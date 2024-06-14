@@ -32,4 +32,6 @@ To see an example CV, visit the link below:
 
 Try locally: `npm run dev`
 
-Build: `npm run build`
+Build: `npm run build` (build in `./dist`)
+
+Generate PDF: `npm run generate-pdf` (build in `public/cv.pdf`)

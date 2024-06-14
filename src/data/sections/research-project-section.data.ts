@@ -39,7 +39,7 @@ const researchProjectSectionData = {
       ],
       pdfDetails: [],
       description:
-        'In the scope of the Italian Partnership – Partenariato Esteso “Security and Rights in CyberSpace" (SeRiCS) – FBK is participating in the “Spoke 4: Operating Systems and Virtualization Security" project “Securing Containers (SecCo)", and in the “Spoke 5: Cryptography and Distributed Systems Security" project “Secure and TRaceable Identities in Distributed Environments (STRIDE)". SecCo aims at supporting the secure development and deployment of containerized applications on distributed and heterogeneous architectures. The goals of STRIDE include supporting the secure, protected, and accountable identification of entities and actions through digital identity and access control. Relevant partners are CNR – Consiglio Nazionale delle Ricerche, Telsy S.p.A., ENI, and CINI – Consorzio Interuniversitario Nazionale per l\'Informatica.',
+        'Within the SeRiCS ("Security and Rights in CyberSpace") Italian partnership, the project SecCo ("Securing Containers") aims at supporting the secure development and deployment of containerized applications on distributed and heterogeneous architectures, while the project STRIDE ("Secure and TRaceable Identities in Distributed Environments") aims at supporting the secure, protected, and accountable identification of entities and actions through digital identity and access control. Relevant partners are CNR - Consiglio Nazionale delle Ricerche, Telsy S.p.A., ENI, and CINI - Consorzio Interuniversitario Nazionale per l\'Informatica.',
       tagsList: {
         title: 'Topics',
         tags: [attributeBasedEncryption(), cloudnative(), devsecops(), authorization(), appliedcryptography()],
