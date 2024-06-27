@@ -37,7 +37,7 @@ const experienceSectionData = {
       selected: true,
     },
     {
-      role: 'PhD Student',
+      role: 'PhD',
       company: 'University of Genoa \& Fondazione Bruno Kessler',
       image: import('@/assets/logos/unige-logo.jpg'),
       dates: [new Date('2020-11'), new Date('2023-10')],

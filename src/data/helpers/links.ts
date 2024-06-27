@@ -221,13 +221,18 @@ export const springer = createLinkFactory({
 });
 
 export const scitepress = createLinkFactory({
-  name: 'SCITEPRESS',
+  name: 'SciTePress',
   icon: 'tdesign:letters-s',
 });
 
 export const elsevier = createLinkFactory({
-  name: 'ELSEVIER',
+  name: 'Elsevier',
   icon: 'simple-icons:elsevier',
+});
+
+export const researchgate = createLinkFactory({
+  name: 'Research Gate',
+  icon: 'academicons:researchgate-square',
 });
 
 // WORKPLACE

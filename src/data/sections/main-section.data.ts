@@ -1,6 +1,6 @@
 import type { MainSection } from '@/types/sections/main-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { scholar, scopus, orcid, github, linkedin, mail, cv } from '../helpers/links';
+import { scholar, scopus, orcid, researchgate, github, linkedin, mail, cv } from '../helpers/links';
 
 const mainSectionData = {
   config: {
@@ -37,7 +37,7 @@ const mainSectionData = {
     url: '/cv.pdf',
     downloadedFileName: 'CV-Stefano_Berlato.pdf',
   },
-  links: [cv({ url: 'https://stefanoberlato.it/cv.pdf' }), mail({ url: 'mailto:sb.berlatostefano@gmail.com' }), github({ url: 'https://github.com/StefanoBerlato' }), scholar({ url: 'https://scholar.google.com/citations?user=cMgQ9_cAAAAJ' }), github({ url: 'https://github.com/StefanoBerlato' }), linkedin({ url: 'https://www.linkedin.com/in/berlatostefano/' }), scopus({ url: 'https://www.scopus.com/authid/detail.uri?authorId=57215196706' }), orcid({ url: 'https://orcid.org/0000-0002-1700-672X' })],
+  links: [cv({ url: 'https://stefanoberlato.it/cv.pdf' }), mail({ url: 'mailto:sb.berlatostefano@gmail.com' }), researchgate({ url: 'https://www.researchgate.net/profile/Stefano-Berlato-2' }), scholar({ url: 'https://scholar.google.com/citations?user=cMgQ9_cAAAAJ' }), github({ url: 'https://github.com/StefanoBerlato' }), linkedin({ url: 'https://www.linkedin.com/in/berlatostefano/' }), scopus({ url: 'https://www.scopus.com/authid/detail.uri?authorId=57215196706' }), orcid({ url: 'https://orcid.org/0000-0002-1700-672X' })],
 } as const satisfies ReadonlyDeep<MainSection>;
 
 export default mainSectionData;
