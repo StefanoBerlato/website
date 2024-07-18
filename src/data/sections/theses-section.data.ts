@@ -11,6 +11,12 @@ const thesesSectionData = {
   },
   theses: [
     {
+      authors: 'Marco Soldera',
+      title: 'A Risk Assessment Methodology for VSNF Placement in Cloud Native Applications',
+      venue: 'Bachelor in Computer Science at the University of Trento (2024)',
+      links: [],
+    },
+    {
       authors: 'Simone Brunello',
       title: 'Cryptographic Access Control for Balancing Trust, Protection, and Performance',
       venue: 'Bachelor in Computer Science at the University of Trento (2024)',

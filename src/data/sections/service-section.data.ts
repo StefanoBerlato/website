@@ -12,7 +12,7 @@ const serviceSectionData = {
   service: [
     {
       year: '2024',
-      reviews: 'Reviewer for: IEEE - TIFS · ICIN · WWW · ITASEC · DBSec',
+      reviews: 'Reviewer for: IEEE - TIFS · ICIN · WWW · ITASEC · DBSec · ICFEM',
     },
     {
       year: '2023',
