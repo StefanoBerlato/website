@@ -15,8 +15,16 @@ const teachingSectionData = {
       title: 'Teaching Assistant',
       institution: 'University of Trento',
       image: import('@/assets/logos/unitn-logo.png'),
-      dates: [new Date('2020.09'), null],
-      description: 'Teaching Assistant for the Computer Science course "Programmazione 1"; preparation of lectures and exams, marking and grading of exams.',
+      dates: [new Date('2024.09'), null],
+      description: 'Teaching Assistant for the master courses "Advanced Programming of Cryptographic Methods" and "Cryptographic Protocols for Secure Networks and Applications"; preparation of lectures and exams, marking and grading of exams.',
+      links: [unitn({ url: 'https://www.unitn.it/en' })],
+    },
+    {
+      title: 'Teaching Assistant',
+      institution: 'University of Trento',
+      image: import('@/assets/logos/unitn-logo.png'),
+      dates: [new Date('2020.09'), new Date('2024.09')],
+      description: 'Teaching Assistant for the bachelor course "Programming 101"; preparation of lectures and exams, marking and grading of exams.',
       links: [unitn({ url: 'https://www.unitn.it/en' })],
     },
     {
