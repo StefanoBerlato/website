@@ -8,7 +8,7 @@ import Typography from '@/web/components/typography.astro';
 
 export interface Props extends Service {}
 
-const { year, reviews } = Astro.props;
+const { year, reviews, organizing } = Astro.props;
 ---
 
 <div class="flex flex-col gap-3">
@@ -16,7 +16,8 @@ const { year, reviews } = Astro.props;
     <div class="flex gap-4">
       <div class="flex flex-col">
         <Typography variant="item-title">{year}</Typography>
-        <Description content={reviews} />
+        {reviews && <Description content={reviews} />}
+        {organizing && <Description content={organizing} />}
       </div>
     </div>
   </div>

@@ -30,7 +30,7 @@ const mainSectionData = {
     { label: 'ORCiD', value: '0000-0002-1700-672X', url: 'https://orcid.org/0000-0002-1700-672X'},
   ],
   description:
-    'Researcher\@Fondazione Bruno Kessler, member of De Cifris.\nKeen on applied cryptography, cybersecurity, and cloud native.\nFootball coach, avid fantasy reader, and D&D master.\n',
+    'Researcher\@Fondazione Bruno Kessler.\nKeen on applied cryptography, cybersecurity, and cloud native.\nFootball coach, fantasy reader, and D&D master.\n',
   tags: [{ name: 'Researcher\@FBK', url: 'https://www.fbk.eu/en/' }, { name: 'Teaching Assistant\@UniTN', url: 'https://www.unitn.it/' }, { name: 'Football Coach\@PGS Concordia', url: 'http://www.pgsconcordia.net/' }],
   action: {
     label: 'Download CV',

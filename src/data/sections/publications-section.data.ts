@@ -15,7 +15,7 @@ const publicationsSectionData = {
       authors: 'Stefano Berlato, Matteo Rizzi, Matteo Franzil, Silvio Cretti, Pietro De Matteis, Roberto Carbone',
       title: 'Work-in-Progress: A Sidecar Proxy for Usable and Performance-Adaptable End-to-End Protection of Communications in Cloud Native Applications',
       venue: 'in 1st Workshop on Operating Systems and Virtualization Security (OSVS 2024)',
-      links: [pdf({ url: 'publications/OSVS2024.pdf' })],
+      links: [pdf({ url: 'publications/OSVS2024.pdf' }), doi({ url: 'https://doi.org/10.1109/EuroSPW61312.2024.00086' }), ieee({ url: 'https://ieeexplore.ieee.org/document/10628670/' })],
       selected: true,
     },
     {

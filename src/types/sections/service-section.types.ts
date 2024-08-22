@@ -9,7 +9,12 @@ export interface Service {
   /**
    * List of venues for which you did a review.
    */
-  reviews: string;
+  reviews?: string;
+
+  /**
+   * List of venues for which you were an organizing committee member.
+   */
+  organizing?: string;
 }
 
 export interface ServiceSection extends Section {
