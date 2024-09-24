@@ -11,9 +11,15 @@ const thesesSectionData = {
   },
   theses: [
     {
+      authors: 'Luca Claus',
+      title: 'End-to-End Protection for Data Sharing Among Organizations in Cloud-Managed Blockchain Applications',
+      venue: 'Bachelor in Computer, Communications and Electronic Engineering at the University of Trento (2024)',
+      links: [],
+    },
+    {
       authors: 'Marco Soldera',
       title: 'A Risk Assessment Methodology for VSNF Placement in Cloud Native Applications',
-      venue: 'Bachelor in Computer Science at the University of Trento (2024)',
+      venue: 'Bachelor in Computer, Communications and Electronic Engineering at the University of Trento (2024)',
       links: [],
     },
     {

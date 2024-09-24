@@ -68,7 +68,7 @@ const researchProjectSectionData = {
     {
       name: 'FAMILIAR',
       image: import('@/assets/researchProject/familiar.png'),
-      dates: [new Date('2023-08'), null],
+      dates: [new Date('2023-08'), new Date('2024-08')],
       details: [
         { label: 'Consortium', value: '7 partners' },
         { label: 'My role', value: 'Contributor' },
@@ -77,7 +77,7 @@ const researchProjectSectionData = {
       ],
       pdfDetails: [],
       description:
-        'The project aims to conceive and develop a platform (called Familiar) that enables the creation of a coordination system for Long Term Care (LTC) services using innovative digital technologies, with a specific focus on the field of dementia. The ultimate goal is to enhance the quality of life for patients and increase support for their families. Relevant partners are Zucchetti Healthcare, Shifton, SDA Bocconi, Upipa, AIP – Associazione Italiana di Psicogeriatria.',
+        'The project aims to conceive and develop a platform (called Familiar) that enables the creation of a coordination system for Long Term Care (LTC) services using innovative digital technologies, with a specific focus on the field of dementia. The ultimate goal is to enhance the quality of life for patients and increase support for their families. Relevant partners are Zucchetti Healthcare, Shifton, SDA Bocconi, Upipa, AIP - Associazione Italiana di Psicogeriatria.',
       tagsList: {
         title: 'Topics',
         tags: [appliedcryptography(), authentication(), authorization(), blockchain(), cloud()],
