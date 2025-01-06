@@ -13,7 +13,7 @@ const config = {
   meta: {
     title: 'Stefano Berlato - Computer Scientist, PhD',
     description:
-      'Researcher\@FBK, De Cifris member | Keen on cloud security and applied cryptography | Football coach, KH fan, D&D master.',
+      'Researcher\@FBK, De Cifris member | Keen on cloud security and applied cryptography | Football coach, KH fan, Game Master.',
     faviconPath: '/src/assets/my-image.jpg',
   },
   pdf: {

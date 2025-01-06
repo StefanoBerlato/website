@@ -26,7 +26,7 @@ const skillsSectionData = {
       skills: [
         appliedcryptography({
           level: 5,
-          description: 'Cryptographic access control, attribute-based encryption, blockchain.',
+          description: 'Cryptographic access control, attribute-based encryption, key management, blockchain.',
         }),
         authorization({
           level: 4,
@@ -38,6 +38,7 @@ const skillsSectionData = {
         }),
         cloudnative({
           level: 2,
+          description: 'Container technologies, Docker, Kubernetes',
         }),
       ],
     },
@@ -57,6 +58,7 @@ const skillsSectionData = {
         }),
         automotive({
           level: 3,
+          description: 'Cooperative Connected and Automated Mobility (CCAM).',
         }),
         reverseengineering({
           level: 2,

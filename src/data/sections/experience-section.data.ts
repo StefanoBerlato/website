@@ -1,9 +1,10 @@
 import type { ExperienceSection } from '@/types/sections/experience-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { fbk, aleph, unige, none, unitn, github, instagram, linkedin, twitter, website } from '../helpers/links';
+import { fbk, aleph, unige, none, unitn ,github, instagram, linkedin, twitter, website } from '../helpers/links';
 import {
   cloudnative,
   kotlin,
+  blockchain,
   devsecops,
   authorization,
   authentication,
@@ -57,7 +58,7 @@ const experienceSectionData = {
       description: `Research activities on access control in the Cloud, mobile and automotive security. Research activities on Cooperative, Connected and Automated Mobility (5G-CARMEN project). Study and design of reverse engineering protections for Java and Android Apps.`,
       tagsList: {
         title: 'Topics',
-        tags: [appliedcryptography(), authorization(), automotive(), reverseengineering()],
+        tags: [blockchain()],
       }, 
       links: [fbk({ url: 'https://www.fbk.eu/en/' })],
       selected: true,
