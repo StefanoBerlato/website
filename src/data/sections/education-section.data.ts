@@ -16,7 +16,7 @@ const educationSectionData = {
       institution: 'University of Genoa \& Fondazione Bruno Kessler',
       image: import('@/assets/logos/unige-logo.jpg'),
       dates: [new Date('2020.11'), new Date('2023.10')],
-      description: 'PhD in Security, Risk and Vulnerability, Cybersecurity and Reliable Artificial Intelligence curriculum with the thesis "**A Security Service for Performance-Aware End-to-End Protection of Sensitive Data in Cloud Native Applications**".',
+      description: 'PhD (cum laude) in Security, Risk and Vulnerability, Cybersecurity and Reliable Artificial Intelligence curriculum with the thesis "**A Security Service for Performance-Aware End-to-End Protection of Sensitive Data in Cloud Native Applications**".',
       links: [pdf({ url: 'theses/thesis_phd.pdf' }), unige({ url: 'https://www.unige.it/en' })],
     },
     {

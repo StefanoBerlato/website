@@ -7,6 +7,7 @@ import {
   reverseengineering,
   devsecops,
   cloudnative,
+  riskassessment,
   internetofthings,
   automotive,
   android,
@@ -35,6 +36,10 @@ const skillsSectionData = {
         authentication({
           level: 3,
           description: 'Multi-factor authentication, OpenID Connect, FIDO.',
+        }),
+        riskassessment({
+          level: 3,
+          description: 'Threat Modeling',
         }),
         cloudnative({
           level: 2,

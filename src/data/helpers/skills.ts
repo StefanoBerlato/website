@@ -146,4 +146,9 @@ export const attributeBasedEncryption = createSkillFactory({
   iconColor: '#3ECF8E',
 });
 
-// # #06B6D4 #3178C6 #4FC08D
+export const riskassessment = createSkillFactory({
+  name: 'Risk Assessment',
+  icon: 'material-symbols:modeling',
+  iconColor: '#06B6D4',
+});
+// #3178C6 #4FC08D

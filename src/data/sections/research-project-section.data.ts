@@ -16,7 +16,7 @@ import {
 
 const researchProjectSectionData = {
   config: {
-    title: 'Research Projects',
+    title: 'Research and Industrial Projects',
     slug: 'researchProjects',
     icon: 'pepicons-pop:earth-europe',
     visible: true,
