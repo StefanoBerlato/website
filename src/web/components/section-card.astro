@@ -2,13 +2,15 @@
 import type { SectionConfig } from '@/types/shared';
 import ShowSelectedOnlyToggle from '@/web/components/show-selected-only-toggle.astro';
 import Typography from './typography.astro';
+import CollapsibleDiv from './collapsible-div.astro';
 
 export interface Props extends SectionConfig {
   className?: string;
   hideTitle?: boolean;
+  isCollapsible?: boolean;
 }
 
-const { title, slug, hideTitle, className, visible, showSelectedOnly, counter } = Astro.props;
+const { title, slug, hideTitle, isCollapsible, className, visible, showSelectedOnly, counter } = Astro.props;
 ---
 
 {
@@ -25,10 +27,16 @@ const { title, slug, hideTitle, className, visible, showSelectedOnly, counter } 
         {!hideTitle && !counter && <Typography variant="section-title">{title}</Typography>}
         {showSelectedOnly && <ShowSelectedOnlyToggle title={title} relatedTo={slug} />}
       </div>
-      <slot />
+
+      <!-- Alternative Divs, either collapsable or not -->
+      {isCollapsible && <CollapsibleDiv relatedTo={slug}> <slot /> </CollapsibleDiv> }
+      {!isCollapsible && <slot /> }
+      
     </div>
   )
 }
+
+
 
 <script>
   import hashState from '@/web/utils/hash-state';

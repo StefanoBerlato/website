@@ -42,9 +42,9 @@ const researchProjectSectionData = {
         'The European Cybercrime Training and Education Group (ECTEG) blockchain project aims to develop a course on blockchain technology to train and educate law enforcement agents (LEA) and Judicial authorities fighting criminal activities that exploit blockchain-related resources, such as cryptocurrencies. Merging experiences and prior developments is key to ensure a compound and multifaceted training product, that covers the myriad of challenges blockchain technology presents for criminal investigations. As usual, practical and theoretical skills and knowledge will be put to work, while the cooperation with Eurojust-ECJN is key to map the procedures in the EU to include different guidelines/legislation for the seizing of cryptoassets.',
       tagsList: {
         title: 'Topics',
-        tags: [attributeBasedEncryption(), cloudnative(), devsecops(), authorization(), appliedcryptography()],
+        tags: [blockchain(), appliedcryptography()],
       },
-      links: [website({ url: 'https://serics.eu/' })],
+      links: [website({ url: 'https://www.ecteg.eu/running/blockchain-project/' })],
     },
     {
       name: 'SERICS',

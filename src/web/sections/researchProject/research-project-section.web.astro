@@ -11,7 +11,7 @@ const { config, researchProjects } = Astro.props;
 const size = researchProjects.length;
 ---
 
-<SectionCard {...config} counter={size}>
+<SectionCard {...config} counter={size} isCollapsible>
   <DividedList>
     {researchProjects.flatMap((researchProject) => [<ResearchProject {...researchProject} screenshotsConfig={config.screenshots} />, <Divider />])}
   </DividedList>

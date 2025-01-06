@@ -10,7 +10,7 @@ export interface Props extends ExperienceSection {}
 const { config, jobs } = Astro.props;
 ---
 
-<SectionCard {...config}>
+<SectionCard {...config} isCollapsible>
   <DividedList>
     {jobs.flatMap((job) => [<Job {...job} />, <Divider />])}
   </DividedList>

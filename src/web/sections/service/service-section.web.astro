@@ -9,6 +9,6 @@ export interface Props extends ServiceSection {}
 const { config, service } = Astro.props;
 ---
 
-<SectionCard {...config}>
+<SectionCard {...config} isCollapsible>
   {service.flatMap((publication) => [<Service {...publication} />, <Divider />])}
 </SectionCard>

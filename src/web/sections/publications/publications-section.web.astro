@@ -10,6 +10,6 @@ const { config, publications } = Astro.props;
 const size = publications.length;
 ---
 
-<SectionCard {...config} counter={size}>
+<SectionCard {...config} counter={size} isCollapsible>
   {publications.flatMap((publication) => [<Publications {...publication} />, <Divider />])}
 </SectionCard>

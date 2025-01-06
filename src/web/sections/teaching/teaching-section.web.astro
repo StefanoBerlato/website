@@ -9,6 +9,6 @@ export interface Props extends TeachingSection {}
 const { config, teaching } = Astro.props;
 ---
 
-<SectionCard {...config}>
+<SectionCard {...config} isCollapsible>
   {teaching.flatMap((teaching1) => [<Teaching {...teaching1} />, <Divider />])}
 </SectionCard>
