@@ -23,7 +23,7 @@ const mainSectionData = {
     //{ label: 'Phone', value: '605 475 6961' },
     { label: 'CV', value: 'Curriculum Vitae', url: 'https://stefanoberlato.it/cv.pdf' },
     { label: 'Email', value: 'sb.berlatostefano@gmail.com', url: 'mailto:sb.berlatostefano@gmail.com' },
-    { label: 'LinkedIn', value: '/in/berlatostefano', url: 'https://www.linkedin.com/in/berlatostefano/' },
+    { label: 'LinkedIn', value: '/in/berlatostefano', url: 'https://www.linkedin.com/in/stefanoberlato/' },
     { label: 'GitHub', value: '/StefanoBerlato', url: 'https://github.com/StefanoBerlato' },
     { label: 'Website', value: 'stefanoberlato.it', url: 'https://stefanoberlato.it/' },
     { label: 'Scopus', value: '57215196706', url: 'https://www.scopus.com/authid/detail.uri?authorId=57215196706' },
@@ -37,7 +37,7 @@ const mainSectionData = {
     url: '/cv.pdf',
     downloadedFileName: 'CV-Stefano_Berlato.pdf',
   },
-  links: [cv({ url: 'https://stefanoberlato.it/cv.pdf' }), mail({ url: 'mailto:sb.berlatostefano@gmail.com' }), researchgate({ url: 'https://www.researchgate.net/profile/Stefano-Berlato-2' }), scholar({ url: 'https://scholar.google.com/citations?user=cMgQ9_cAAAAJ' }), github({ url: 'https://github.com/StefanoBerlato' }), linkedin({ url: 'https://www.linkedin.com/in/berlatostefano/' }), scopus({ url: 'https://www.scopus.com/authid/detail.uri?authorId=57215196706' }), orcid({ url: 'https://orcid.org/0000-0002-1700-672X' })],
+  links: [cv({ url: 'https://stefanoberlato.it/cv.pdf' }), mail({ url: 'mailto:sb.berlatostefano@gmail.com' }), researchgate({ url: 'https://www.researchgate.net/profile/Stefano-Berlato-2' }), scholar({ url: 'https://scholar.google.com/citations?user=cMgQ9_cAAAAJ' }), github({ url: 'https://github.com/StefanoBerlato' }), linkedin({ url: 'https://www.linkedin.com/in/stefanoberlato/' }), scopus({ url: 'https://www.scopus.com/authid/detail.uri?authorId=57215196706' }), orcid({ url: 'https://orcid.org/0000-0002-1700-672X' })],
 } as const satisfies ReadonlyDeep<MainSection>;
 
 export default mainSectionData;

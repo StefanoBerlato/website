@@ -68,7 +68,7 @@ const researchProjectSectionData = {
     {
       name: 'METAfora',
       image: import('@/assets/researchProject/metafora.jpg'),
-      dates: [new Date('2022-01'), null],
+      dates: [new Date('2022-01'), new Date('2024-12')],
       details: [
         { label: 'Consortium', value: '2 partners' },
         { label: 'My role', value: 'Contributor' },

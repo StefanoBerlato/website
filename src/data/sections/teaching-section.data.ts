@@ -20,6 +20,14 @@ const teachingSectionData = {
       links: [unitn({ url: 'https://www.unitn.it/en' })],
     },
     {
+      title: 'Seminar',
+      institution: 'I.I.S. TRON ZANELLA',
+      image: import('@/assets/logos/tron.png'),
+      dates: [new Date('2025.02'), new Date('2025.02')],
+      description: 'Seminar "I Perché e i Come della Ricerca: Il Lavoro del Ricercatore nel Campo della Sicurezza Informatica" at the Tron-Zanella high school.',
+      links: [website({ url: 'https://www.tronzanella.edu.it/' })],
+    },
+    {
       title: 'Teaching Assistant',
       institution: 'University of Trento',
       image: import('@/assets/logos/unitn-logo.png'),
