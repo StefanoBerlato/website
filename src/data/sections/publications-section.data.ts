@@ -12,6 +12,20 @@ const publicationsSectionData = {
   },
   publications: [
     {
+      authors: 'Simone Brunello, Stefano Berlato, Roberto Carbone, Adam J. Lee, Silvio Ranise',
+      title: 'Relying on Trust to Balance Protection and Performance in Cryptographic Access Control',
+      venue: 'in 30th ACM Symposium on Access Control Models and Technologies (SACMAT 2025)',
+      links: [pdf({ url: 'publications/SACMAT2025.pdf' })],
+      selected: true,
+    },
+    {
+      authors: 'Ion Andy Ditu, Stefano Berlato, Matteo Busi, Roberto Carbone, Silvio Ranise',
+      title: 'Work-in-Progress: Optimizing Performance of User Revocation in Cryptographic Access Control with Trusted Execution Environments',
+      venue: 'in 2nd Workshop on Operating Systems and Virtualization Security (OSVS 2025)',
+      links: [pdf({ url: 'publications/OSVS2025.pdf' })],
+      selected: true,
+    },
+    {
       authors: 'Stefano Berlato, Matteo Rizzi, Matteo Franzil, Silvio Cretti, Pietro De Matteis, Roberto Carbone',
       title: 'Work-in-Progress: A Sidecar Proxy for Usable and Performance-Adaptable End-to-End Protection of Communications in Cloud Native Applications',
       venue: 'in 1st Workshop on Operating Systems and Virtualization Security (OSVS 2024)',
@@ -93,7 +107,7 @@ const publicationsSectionData = {
       title: 'A Large-Scale Study on the Adoption of Anti-Debugging and Anti-Tampering Protections in Android Apps',
       venue: 'in Journal of Information Security and Applications (JISA), Issue number 52',
       links: [pdf({ url: 'publications/JISA2020.pdf' }), doi({ url: 'https://doi.org/10.1016/j.jisa.2020.102463' }), elsevier({ url: 'https://www.sciencedirect.com/science/article/abs/pii/S2214212619305976?via%3Dihub' })],
-      selected: true,
+      selected: false,
     },
 
     

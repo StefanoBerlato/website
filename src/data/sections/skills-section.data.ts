@@ -33,17 +33,17 @@ const skillsSectionData = {
           level: 4,
           description: 'Role- and attribute-based access control.',
         }),
-        authentication({
+        cloudnative({
           level: 3,
+          description: 'Container technologies, Docker, Kubernetes',
+        }),
+        authentication({
+          level: 2,
           description: 'Multi-factor authentication, OpenID Connect, FIDO.',
         }),
         riskassessment({
-          level: 3,
-          description: 'Threat Modeling',
-        }),
-        cloudnative({
           level: 2,
-          description: 'Container technologies, Docker, Kubernetes',
+          description: 'Threat Modeling',
         }),
       ],
     },
