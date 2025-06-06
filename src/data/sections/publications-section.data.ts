@@ -12,6 +12,13 @@ const publicationsSectionData = {
   },
   publications: [
     {
+      authors: 'Stefano Berlato, Umberto Morelli, Roberto Carbone, Silvio Ranise',
+      title: 'A Secure and Quality of Service-Aware Solution for the End to End Protection of IoT Applications',
+      venue: 'in Journal of Network and Computer Applications (JNCA)',
+      links: [pdf({ url: 'publications/JNCA2025.pdf' })],
+      selected: true,
+    },
+    {
       authors: 'Simone Brunello, Stefano Berlato, Roberto Carbone, Adam J. Lee, Silvio Ranise',
       title: 'Relying on Trust to Balance Protection and Performance in Cryptographic Access Control',
       venue: 'in 30th ACM Symposium on Access Control Models and Technologies (SACMAT 2025)',
