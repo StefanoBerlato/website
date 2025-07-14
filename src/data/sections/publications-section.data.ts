@@ -12,17 +12,24 @@ const publicationsSectionData = {
   },
   publications: [
     {
+      authors: 'Stefano Berlato, Roberto Carbone, Silvio Ranise',
+      title: 'A Methodology for the Experimental Performance Evaluation of Access Control Enforcement Mechanisms based on Business Processes',
+      venue: 'in Journal of Information Security and Applications (JISA)',
+      links: [pdf({ url: 'publications/JISA2025.pdf' })],
+      selected: true,
+    },
+    {
       authors: 'Stefano Berlato, Umberto Morelli, Roberto Carbone, Silvio Ranise',
       title: 'A Secure and Quality of Service-Aware Solution for the End to End Protection of IoT Applications',
       venue: 'in Journal of Network and Computer Applications (JNCA)',
-      links: [pdf({ url: 'publications/JNCA2025.pdf' })],
+      links: [pdf({ url: 'publications/JNCA2025.pdf' }), doi({ url: 'https://doi.org/10.1016/j.jnca.2025.104246' }), elsevier({ url: 'https://www.sciencedirect.com/science/article/abs/pii/S1084804525001432?via%3Dihub' })],
       selected: true,
     },
     {
       authors: 'Simone Brunello, Stefano Berlato, Roberto Carbone, Adam J. Lee, Silvio Ranise',
       title: 'Relying on Trust to Balance Protection and Performance in Cryptographic Access Control',
       venue: 'in 30th ACM Symposium on Access Control Models and Technologies (SACMAT 2025)',
-      links: [pdf({ url: 'publications/SACMAT2025.pdf' })],
+      links: [pdf({ url: 'publications/SACMAT2025.pdf' }), doi({ url: 'https://doi.org/10.1145/3734436.3734452' }), acm({ url: 'https://dl.acm.org/doi/10.1145/3734436.3734452' })],
       selected: true,
     },
     {

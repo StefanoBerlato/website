@@ -12,12 +12,13 @@ const serviceSectionData = {
   service: [
     {
       year: '2025',
-      reviews: 'Reviewer for: IEEE - T-ITS · ESORICS'
+      reviews: 'Reviewer for: IEEE - T-ITS · ESORICS',
+      organizing: 'Organizing Committee member of the <a href="https://aleph.fbk.eu/events/TAC2025/">3rd Topics in Applied Cryptography</a> (TAC) workshop'
     },
     {
       year: '2024',
       reviews: 'Reviewer for: IEEE - TIFS, T-ITS · ICIN · WWW · ITASEC · DBSec · ICFEM',
-      organizing: 'Organizing Committee member of the <a href="https://aleph.fbk.eu/events/TAC2024/">Topics in Applied Cryptography</a> (TAC) workshop'
+      organizing: 'Organizing Committee member of the <a href="https://aleph.fbk.eu/events/TAC2024/">2nd Topics in Applied Cryptography</a> (TAC) workshop'
     },
     {
       year: '2023',
