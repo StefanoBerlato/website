@@ -30,7 +30,7 @@ const skillsSectionData = {
       skills: [
         appliedcryptography({
           level: 5,
-          description: 'cryptographic access control, secure cryptographic protocols and algorithms',
+          description: 'cryptographic access control, key management, secure cryptographic protocols and algorithms',
         }),
         authorization({
           level: 4,
@@ -68,7 +68,7 @@ const skillsSectionData = {
       skills: [
         cloud({
           level: 4,
-          description: 'data security in the cloud, AWS, Azure',
+          description: 'data security in the cloud, multi-objective optimization for cloud architectures, cloud-to-thing continuum',
         }),
         automotive({
           level: 3,
