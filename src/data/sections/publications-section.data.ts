@@ -15,7 +15,7 @@ const publicationsSectionData = {
       authors: 'Stefano Berlato, Roberto Carbone, Silvio Ranise',
       title: 'A Methodology for the Experimental Performance Evaluation of Access Control Enforcement Mechanisms based on Business Processes',
       venue: 'in Journal of Information Security and Applications (JISA)',
-      links: [pdf({ url: 'publications/JISA2025.pdf' })],
+      links: [pdf({ url: 'publications/JISA2025.pdf' }), doi({ url: 'https://doi.org/10.1016/j.jisa.2025.104158' }), elsevier({ url: 'https://www.sciencedirect.com/science/article/pii/S2214212625001954?via%3Dihub' })],
       selected: true,
     },
     {

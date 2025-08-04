@@ -115,7 +115,7 @@ const researchProjectSectionData = {
       ],
       pdfDetails: [],
       description:
-        'The 5G-CARMEN (5G for Connected and Automated Road Mobility in the European UnioN) project is a medium-term effort to significantly drive the research, implementation, and demonstration of refined 5G solutions for the Cooperative, Connected, and Automated Mobility. Relevant partners are Deutsche Telekom AG, BMW Group, Centro Ricerche FIAT, TIM, NOKIA, and Qualcomm.',
+        'The 5G-CARMEN (5G for Connected and Automated Road Mobility in the European UnioN) project is a medium-term effort to significantly drive the research, implementation, and demonstration of refined 5G solutions for the cooperative, connected, and automated mobility (CCAM). Relevant partners are Deutsche Telekom AG, BMW Group, Centro Ricerche FIAT, TIM, NOKIA, and Qualcomm.',
       tagsList: {
         title: 'Topics',
         tags: [automotive(), authorization(), blockchain(), internetofthings()],

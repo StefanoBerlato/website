@@ -129,15 +129,15 @@ export const kotlin = createSkillFactory({
 });
   
 export const blockchain = createSkillFactory({
-  name: 'Blockchain',
+  name: 'Distributed Ledgers',
   icon: 'icon-park-twotone:blockchain',
-  iconColor: '#FF4154',
+  iconColor: '#3178C6',
 });
 
 export const cloud = createSkillFactory({
   name: 'Cloud',
   icon: 'material-symbols:cloud-outline',
-  iconColor: '#CC6699',
+  iconColor: '#4FC08D',
 });
  
 export const attributeBasedEncryption = createSkillFactory({
@@ -151,4 +151,16 @@ export const riskassessment = createSkillFactory({
   icon: 'material-symbols:modeling',
   iconColor: '#06B6D4',
 });
-// #3178C6 #4FC08D
+
+export const postquantum = createSkillFactory({
+  name: 'PQ Cryptography',
+  icon: 'material-symbols:grain',
+  iconColor: '#9b59b6',
+});
+
+export const confidentialcomputing = createSkillFactory({
+  name: 'Confidential Computing',
+  icon: 'material-symbols:list-alt-check',
+  iconColor: '#16a085',
+});
+

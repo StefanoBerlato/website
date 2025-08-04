@@ -1,7 +1,8 @@
 import type { ExperienceSection } from '@/types/sections/experience-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { fbk, aleph, unige, none, unitn ,github, instagram, linkedin, twitter, website } from '../helpers/links';
+import { fbk, aleph, unige, none, unitn, github, instagram, linkedin, twitter, website} from '../helpers/links';
 import {
+  cloud,
   cloudnative,
   kotlin,
   blockchain,
@@ -13,6 +14,7 @@ import {
   automotive,
   reverseengineering,
   android,
+  riskassessment,
 } from '../helpers/skills';
 
 const experienceSectionData = {
@@ -29,7 +31,7 @@ const experienceSectionData = {
       company: 'Fondazione Bruno Kessler',
       image: import('@/assets/logos/fbk-logo.png'),
       dates: [new Date('2023-11'), null],
-      description: `Research on applied cryptography, identity and access management, and cybersecurity for cloud native applications. Development of tools for research and demonstration purposes in kotlin. Supervision of interns, BSc and MSc students.`,
+      description: `Research on applied cryptography, identity and access management, and cybersecurity for cloud native applications. Development of tools for research and demonstration purposes in Kotlin. Supervision of interns, BSc and MSc students.`,
       tagsList: {
         title: 'Topics',
         tags: [appliedcryptography(), authentication(), authorization(), devsecops(), cloudnative(), kotlin()],
@@ -42,10 +44,10 @@ const experienceSectionData = {
       company: 'University of Genoa \& Fondazione Bruno Kessler',
       image: import('@/assets/logos/unige-logo.jpg'),
       dates: [new Date('2020-11'), new Date('2023-10')],
-      description: `Joint PhD on cryptographic access control in cloud-edge-IoT applications (e.g., Cooperative Connected and Automated Mobility) and design of architectural models for optimal enforcement of cryptographic access control policies.`,
+      description: `Joint PhD on cryptographic access control in cloud-edge-IoT applications, CCAM (cooperative, connected, and automated mobility), and design of architectural models for optimal enforcement of cryptographic access control policies.`,
       tagsList: {
         title: 'Topics',
-        tags: [appliedcryptography(), authorization(), internetofthings(), automotive()],
+        tags: [appliedcryptography(), cloud(), authorization(), internetofthings(), automotive()],
       },
       links: [unige({ url: 'https://unige.it/en' }), fbk({ url: 'https://www.fbk.eu/en/' })],
       selected: true,
@@ -55,10 +57,10 @@ const experienceSectionData = {
       company: 'Fondazione Bruno Kessler',
       image: import('@/assets/logos/fbk-logo.png'),
       dates: [new Date('2018-10'), new Date('2020-10')],
-      description: `Research activities on access control in the Cloud, mobile and automotive security. Research activities on Cooperative, Connected and Automated Mobility (5G-CARMEN project). Study and design of reverse engineering protections for Java and Android Apps.`,
+      description: `Research activities on access control in the Cloud, risk assessment for automotive security (5G-CARMEN project), reverse engineering protections for Java and Android Apps.`,
       tagsList: {
         title: 'Topics',
-        tags: [blockchain()],
+        tags: [blockchain(), cloud(), authorization(), automotive(), riskassessment(), reverseengineering()],
       }, 
       links: [fbk({ url: 'https://www.fbk.eu/en/' })],
       selected: true,

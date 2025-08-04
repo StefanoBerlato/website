@@ -11,6 +11,12 @@ const thesesSectionData = {
   },
   theses: [
     {
+      authors: 'Isaia Tonini',
+      title: 'Memory safety: dalla teoria alla pratica - Guida per una corretta gestione della memoria',
+      venue: 'Bachelor in Computer Science at the University of Trento (2025)',
+      links: [],
+    },
+    {
       authors: 'Luca Claus',
       title: 'End-to-End Protection for Data Sharing Among Organizations in Cloud-Managed Blockchain Applications',
       venue: 'Bachelor in Computer, Communications and Electronic Engineering at the University of Trento (2024)',

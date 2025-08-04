@@ -6,11 +6,14 @@ import {
   authorization,
   reverseengineering,
   devsecops,
+  cloud,
   cloudnative,
   riskassessment,
   internetofthings,
   automotive,
-  android,
+  postquantum,
+  confidentialcomputing,
+  blockchain,
 } from '../helpers/skills';
 
 const skillsSectionData = {
@@ -27,50 +30,65 @@ const skillsSectionData = {
       skills: [
         appliedcryptography({
           level: 5,
-          description: 'Cryptographic access control, attribute-based encryption, key management, blockchain.',
+          description: 'cryptographic access control, secure cryptographic protocols and algorithms',
         }),
         authorization({
           level: 4,
-          description: 'Role- and attribute-based access control.',
+          description: 'role- and attribute-based access control, OPA/Rego',
         }),
         cloudnative({
           level: 3,
-          description: 'Container technologies, Docker, Kubernetes',
+          description: 'microservices (Docker) and orchestration (Kubernetes)',
         }),
         authentication({
           level: 2,
-          description: 'Multi-factor authentication, OpenID Connect, FIDO.',
+          description: 'multi-factor authentication, OpenID Connect, FIDO',
         }),
-        riskassessment({
-          level: 2,
-          description: 'Threat Modeling',
-        }),
+        devsecops({
+          level: 1,
+          description: 'securing containerized applications on distributed heterogeneous architectures',
+        })
       ],
     },
     {
       title: 'Will work on',
       skills: [
-        devsecops({
-          level: 1,
+        confidentialcomputing({
+          level: 3,
+          description: 'based on hardware (TEEs, HSMs) and cryptography (SE, FE, HE)',
         }),
+        postquantum({
+          level: 2,
+          description: 'crypto-agility',
+        })
       ],
     },
     {
       title: 'Worked on',
       skills: [
-        internetofthings({
-          level: 2,
+        cloud({
+          level: 4,
+          description: 'data security in the cloud, AWS, Azure',
         }),
         automotive({
           level: 3,
-          description: 'Cooperative Connected and Automated Mobility (CCAM).',
+          description: 'cooperative, connected, and automated mobility (CCAM)',
+        }),
+        blockchain({
+          level: 3,
+          description: 'blockchains, Hyperledger Fabric',
         }),
         reverseengineering({
           level: 2,
-          description: 'Android, Java, anti-debugging.',
+          description: 'Android, Java, anti-debugging',
         }),
-        android({
-          level: 3,
+        riskassessment({
+          level: 2,
+          description: 'threat modeling',
+        }),
+        internetofthings({
+          level: 1,
+          description: 'publish-subscribe protocols (MQTT(',
         }),
       ],
     },

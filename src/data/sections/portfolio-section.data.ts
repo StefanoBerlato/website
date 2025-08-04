@@ -28,6 +28,27 @@ const portfolioSectionData = {
   },
   openSourceProjects: [
     {
+      name: 'CryptoAC',
+      image: import('@/assets/portfolio/cryptoac.png'),
+      dates: [new Date('2019-03'), null],
+      details: [
+        { label: 'Team size', value: '1 people' },
+        { label: 'My role', value: 'Developer' },
+        { label: 'Scope', value: 'Open Source Project' },
+        { label: 'Category', value: ['Tool'] },
+      ],
+      pdfDetails: [
+        { label: 'Repository', value: '/cryptoac', url: 'https://github.com/stfbk/CryptoAC' },
+      ],
+      description:
+        'A tool for end-to-end protection of sensitive data (such as documents, files and messages) through cryptographic enforcement of access control policies.',
+      tagsList: {
+        title: 'Technologies',
+        tags: [kotlin(), react()],
+      },
+      links: [github({ url: 'https://github.com/stfbk/CryptoAC' })],
+    },
+    {
       name: 'Kotlin Multiplatform for OpenABE',
       image: import('@/assets/portfolio/kabe.png'),
       dates: [new Date('2022-03'), null],
@@ -44,7 +65,7 @@ const portfolioSectionData = {
         'A wrapper allowing to easily use the OpenABE library for Attribute-based Encryption (ABE) from Kotlin multiplatform.',
       tagsList: {
         title: 'Technologies',
-        tags: [kotlin(), react()],
+        tags: [kotlin()],
       },
       links: [github({ url: 'https://github.com/StefanoBerlato/kotlin-multiplatform-openabe' })],
     },
