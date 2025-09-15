@@ -36,7 +36,7 @@ const publicationsSectionData = {
       authors: 'Ion Andy Ditu, Stefano Berlato, Matteo Busi, Roberto Carbone, Silvio Ranise',
       title: 'Work-in-Progress: Optimizing Performance of User Revocation in Cryptographic Access Control with Trusted Execution Environments',
       venue: 'in 2nd Workshop on Operating Systems and Virtualization Security (OSVS 2025)',
-      links: [pdf({ url: 'publications/OSVS2025.pdf' })],
+      links: [pdf({ url: 'publications/OSVS2025.pdf' }), doi({ url: 'https://doi.org/10.1109/EuroSPW67616.2025.00076' }), ieee({ url: 'https://ieeexplore.ieee.org/document/11129590/' })],
       selected: true,
     },
     {

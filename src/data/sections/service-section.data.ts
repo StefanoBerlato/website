@@ -12,37 +12,37 @@ const serviceSectionData = {
   service: [
     {
       year: '2025',
-      reviews: 'Reviewer for: IEEE - T-ITS · ESORICS',
+      reviews: 'Reviewer for: Elsevier - JISA · IEEE - T-ITS. Subreviewer for: ESORICS',
       organizing: 'Organizing Committee member of the <a href="https://aleph.fbk.eu/events/TAC2025/">3rd Topics in Applied Cryptography</a> (TAC) workshop'
     },
     {
       year: '2024',
-      reviews: 'Reviewer for: IEEE - TIFS, T-ITS · ICIN · WWW · ITASEC · DBSec · ICFEM',
+      reviews: 'Reviewer for: IEEE - TIFS · IEEE - T-ITS. Subreviewer for: ICIN · WWW · ITASEC · DBSec · ICFEM',
       organizing: 'Organizing Committee member of the <a href="https://aleph.fbk.eu/events/TAC2024/">2nd Topics in Applied Cryptography</a> (TAC) workshop'
     },
     {
       year: '2023',
-      reviews: 'Reviewer for: EURASIP - JIS · DBSec · ITASEC · SECRYPT · CODASPY · SACMAT · ICISS · FPS',
+      reviews: 'Reviewer for: EURASIP - JIS. Subreviewer for: DBSec · ITASEC · SECRYPT · CODASPY · SACMAT · ICISS · FPS',
       organizing: undefined
     },
     {
       year: '2022',
-      reviews: 'Reviewer for: CODASPY · SECRYPT · DBSec · FedCSIS · ICISSP · FPS',
+      reviews: 'Subreviewer for: CODASPY · SECRYPT · DBSec · FedCSIS · ICISSP · FPS',
       organizing: undefined
     },
     {
       year: '2021',
-      reviews: 'Reviewer for: Elsevier - JISA · SECRYPT · DPM · SACMAT · ITASEC · DBSec · FPS',
+      reviews: 'Reviewer for: Elsevier - JISA. Subreviewer for: SECRYPT · DPM · SACMAT · ITASEC · DBSec · FPS',
       organizing: undefined
     },
     {
       year: '2020',
-      reviews: 'Reviewer for: SECRYPT · FPS · ICISS · DPM · DBSec · SACMAT',
+      reviews: 'Subreviewer for: SECRYPT · FPS · ICISS · DPM · DBSec · SACMAT',
       organizing: undefined
     },
     {
       year: '2019',
-      reviews: 'Reviewer for: ICISS',
+      reviews: 'Subreviewer for: ICISS',
       organizing: undefined
     },
   ],

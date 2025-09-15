@@ -88,7 +88,7 @@ const skillsSectionData = {
         }),
         internetofthings({
           level: 1,
-          description: 'publish-subscribe protocols (MQTT(',
+          description: 'publish-subscribe protocols (MQTT)',
         }),
       ],
     },
@@ -96,7 +96,7 @@ const skillsSectionData = {
       title: 'I speak',
       skills: [
         { icon: 'circle-flags:it', name: 'Italian - native' },
-        { icon: 'circle-flags:us', name: 'English - C1' },
+        { icon: 'circle-flags:gb', name: 'English - C1' },
       ],
     },
   ],
