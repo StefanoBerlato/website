@@ -1,6 +1,6 @@
 import type { TeachingSection } from '@/types/sections/teaching-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { unitn, unige, website } from '../helpers/links';
+import { unitn, unige, website, upc } from '../helpers/links';
 
 const teachingSectionData = {
   config: {
@@ -12,12 +12,28 @@ const teachingSectionData = {
   },
   teaching: [
     {
+      title: 'Guest Lecturer',
+      institution: 'Polytechnic University of Catalonia',
+      image: import('@/assets/logos/upc-logo.png'),
+      dates: [new Date('2026.01'), new Date('2026.01')],
+      description: 'Guest lecture for the course "Network Security" of the master "Machine Learning and Cybersecurity for Internet Connected Systems".',
+      links: [upc({ url: 'https://epsem.upc.edu/en/graduate/merit/merit?set_language=en' })],
+    },
+    {
       title: 'Teaching Assistant',
       institution: 'University of Trento',
       image: import('@/assets/logos/unitn-logo.png'),
       dates: [new Date('2024.09'), null],
       description: 'Teaching Assistant for the master courses "Advanced Programming of Cryptographic Methods" and "Cryptographic Protocols for Secure Networks and Applications"; preparation of lectures and exams, marking and grading of exams.',
       links: [unitn({ url: 'https://www.unitn.it/en' })],
+    },
+    {
+      title: 'Teacher',
+      institution: 'University of Genoa',
+      image: import('@/assets/logos/unige-logo.jpg'),
+      dates: [new Date('2023.10'), null],
+      description: 'Lecturer in advanced applications for access control in the "Cybersecurity and Critical Infrastructure Protection" professional specialization course.',
+      links: [unige({ url: 'https://www.unige.it/en' })],
     },
     {
       title: 'Seminar',
@@ -42,14 +58,6 @@ const teachingSectionData = {
       dates: [new Date('2024.02'), new Date('2024.02')],
       description: 'Seminar "I Perché e i Come della Ricerca: Il Lavoro del Ricercatore nel Campo della Sicurezza Informatica" at the Tron-Zanella high school.',
       links: [website({ url: 'https://www.tronzanella.edu.it/' })],
-    },
-    {
-      title: 'Teacher',
-      institution: 'University of Genoa',
-      image: import('@/assets/logos/unige-logo.jpg'),
-      dates: [new Date('2023.10'), new Date('2023.11')],
-      description: 'Lecturer in advanced applications for access control in the "Cybersecurity and Critical Infrastructure Protection" professional specialization course.',
-      links: [unige({ url: 'https://www.unige.it/en' })],
     },
     {
       title: 'Guest Lecturer',

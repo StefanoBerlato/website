@@ -256,3 +256,8 @@ export const unitn = createLinkFactory({
   name: 'UniTN',
   icon: 'fa-solid:university',
 });
+
+export const upc = createLinkFactory({
+  name: 'UPC',
+  icon: 'fa-solid:university',
+});

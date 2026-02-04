@@ -11,6 +11,12 @@ const thesesSectionData = {
   },
   theses: [
     {
+      authors: 'Riccardo Gennaro',
+      title: 'Revisiting the ETSI C-ITS Lifecycle with Cerificateless Authorization Based on Group Signatures',
+      venue: 'Double Master in Cybersecurity at the University of Twente and the University of Trento (2025)',
+      links: [],
+    },
+    {
       authors: 'Isaia Tonini',
       title: 'Memory safety: dalla teoria alla pratica - Guida per una corretta gestione della memoria',
       venue: 'Bachelor in Computer Science at the University of Trento (2025)',

@@ -13,6 +13,7 @@ import {
   automotive,
   postquantum,
   confidentialcomputing,
+  privacyenhancingtechnologies,
   blockchain,
 } from '../helpers/skills';
 
@@ -55,7 +56,11 @@ const skillsSectionData = {
       skills: [
         confidentialcomputing({
           level: 3,
-          description: 'based on hardware (TEEs, HSMs) and cryptography (SE, FE, HE)',
+          description: 'Trusted Execution Environments, Hardware Security Modules',
+        }),
+        privacyenhancingtechnologies({
+          level: 3,
+          description: 'Functional Encryption, Searchable Encryption, Zero-Knowledge Proofs',
         }),
         postquantum({
           level: 2,

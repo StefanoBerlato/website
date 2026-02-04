@@ -12,6 +12,7 @@ import {
   raspberry,
   python,
   kotlin,
+  appliedcryptography
 } from '../helpers/skills';
 
 const portfolioSectionData = {
@@ -27,6 +28,27 @@ const portfolioSectionData = {
     },
   },
   openSourceProjects: [
+    {
+      name: 'The Hitchhiker\'s Guide to Applied Cryptography',
+      image: import('@/assets/portfolio/hgac.png'),
+      dates: [new Date('2026-01'), null],
+      details: [
+        { label: 'Team size', value: '1 team' },
+        { label: 'My role', value: 'Lead Author' },
+        { label: 'Scope', value: 'Open Source Project' },
+        { label: 'Category', value: ['Handbook'] },
+      ],
+      pdfDetails: [
+        { label: 'Repository', value: '/The-Hitchhiker-s-Guide-to-Applied-Cryptography', url: 'https://github.com/aleph-fbk/The-Hitchhiker-s-Guide-to-Applied-Cryptography' },
+      ],
+      description:
+        'A guided overview of relevant and current concepts in applied cryptography.',
+      tagsList: {
+        title: 'Topics',
+        tags: [appliedcryptography()],
+      },
+      links: [github({ url: 'https://github.com/aleph-fbk/The-Hitchhiker-s-Guide-to-Applied-Cryptography' })],
+    },
     {
       name: 'CryptoAC',
       image: import('@/assets/portfolio/cryptoac.png'),

@@ -11,8 +11,13 @@ const serviceSectionData = {
   },
   service: [
     {
+      year: '2026',
+      reviews: 'Subreviewer for: CODASPY',
+      organizing: undefined
+    },
+    {
       year: '2025',
-      reviews: 'Reviewer for: Elsevier - JISA · IEEE - T-ITS. Subreviewer for: ESORICS',
+      reviews: 'Reviewer for: Elsevier - JISA · IEEE - T-ITS. Subreviewer for: ESORICS · SecITC',
       organizing: 'Organizing Committee member of the <a href="https://aleph.fbk.eu/events/TAC2025/">3rd Topics in Applied Cryptography</a> (TAC) workshop'
     },
     {

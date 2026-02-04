@@ -160,7 +160,12 @@ export const postquantum = createSkillFactory({
 
 export const confidentialcomputing = createSkillFactory({
   name: 'Confidential Computing',
-  icon: 'material-symbols:cloud-alert',
+  icon: 'material-symbols:developer-board',
   iconColor: '#16a085',
 });
 
+export const privacyenhancingtechnologies = createSkillFactory({
+  name: 'Privacy Enhancing Technologies',
+  icon: 'material-symbols:cloud-alert',
+  iconColor: '#3498db',
+});

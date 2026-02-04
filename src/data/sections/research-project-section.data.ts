@@ -49,7 +49,7 @@ const researchProjectSectionData = {
     {
       name: 'ECTEG Blockchain',
       image: import('@/assets/researchProject/ecteg_blockchain.png'),
-      dates: [new Date('2024-09'), new Date('2025-04')],
+      dates: [new Date('2024-09'), new Date('2027-04')],
       details: [
         { label: 'Consortium', value: '7 partners' },
         { label: 'My role', value: 'Contributor' },
