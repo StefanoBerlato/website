@@ -165,7 +165,14 @@ export const confidentialcomputing = createSkillFactory({
 });
 
 export const privacyenhancingtechnologies = createSkillFactory({
-  name: 'Privacy Enhancing Technologies',
+  name: 'Privacy Enhancing Tech',
   icon: 'material-symbols:cloud-alert',
   iconColor: '#3498db',
 });
+
+export const contentprovenance = createSkillFactory({
+  name: 'Content Provenance',
+  icon: 'material-symbols:verified',
+  iconColor: '#61DAFB',
+});
+

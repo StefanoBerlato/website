@@ -12,7 +12,7 @@ const serviceSectionData = {
   service: [
     {
       year: '2026',
-      reviews: 'Subreviewer for: CODASPY',
+      reviews: 'Reviewer for: ACM - DLT. Subreviewer for: CODASPY',
       organizing: undefined
     },
     {

@@ -12,6 +12,13 @@ const publicationsSectionData = {
   },
   publications: [
     {
+      authors: 'Riccardo Gennaro, Stefano Berlato, Alessandro Tomasi, Silvio Ranise, Florian Hahn',
+      title: 'Revisiting the ETSI ITS Lifecycle with Certificateless Authorization Based on Group Signatures',
+      venue: 'in 5th Workshop on Automotive Cyber Security (ACSW 2026)',
+      links: [pdf({ url: 'publications/ACSW2026.pdf' })],
+      selected: true,
+    },
+    {
       authors: 'Stefano Berlato, Roberto Carbone, Silvio Ranise',
       title: 'A Methodology for the Experimental Performance Evaluation of Access Control Enforcement Mechanisms based on Business Processes',
       venue: 'in Journal of Information Security and Applications (JISA)',

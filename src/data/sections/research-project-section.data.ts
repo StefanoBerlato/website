@@ -27,10 +27,29 @@ const researchProjectSectionData = {
     },
   },
   researchProjects: [
+      {
+      name: 'TrueBees Goes Crypto',
+      image: import('@/assets/researchProject/truebeesgoescrypto.png'),
+      dates: [new Date('2025-12'), new Date('2026-03')],
+      details: [
+        { label: 'Consortium', value: '2 partners' },
+        { label: 'My role', value: 'Contributor' },
+        { label: 'Funding', value: 'DIPS (CUP code: B67H22005810008)' },
+        { label: 'Coordinator', value: "TrueBees" },
+      ],
+      pdfDetails: [],
+      description:
+        'The project’s goal is to support TrueBees in integrating media provenance techniques based on cryptography, such as digital signatures and hashes, into its product. The initiative aims to enhance the effectiveness of passive forensic analysis by introducing authenticity indicators based on a trust model.',
+      tagsList: {
+        title: 'Topics',
+        tags: [authentication(), appliedcryptography()],
+      },
+      links: [website({ url: 'https://aleph.fbk.eu/projects/TrueBeesGoesCrypto/' })],
+    },
     {
       name: 'SERICS',
       image: import('@/assets/researchProject/serics.png'),
-      dates: [new Date('2023-01'), null],
+      dates: [new Date('2023-01'), new Date('2026-02')],
       details: [
         { label: 'Consortium', value: '24 partners' },
         { label: 'My role', value: 'Contributor' },

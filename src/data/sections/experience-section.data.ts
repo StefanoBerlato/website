@@ -31,7 +31,7 @@ const experienceSectionData = {
       company: 'Fondazione Bruno Kessler',
       image: import('@/assets/logos/fbk-logo.png'),
       dates: [new Date('2023-11'), null],
-      description: `Research on applied cryptography, identity and access management, cloud native applications, and access control in decentralized and partially-trusted systems. Development of tools for research and demonstration purposes in Kotlin. Supervision of interns, BSc and MSc students.`,
+      description: `Research on applied cryptography, identity and access management, and security of cloud native applications in distributed and complex digital ecosystems. Design and analysis of secure services, evaluation of trade-offs at both algorithmic and architectural levels, and development of tools and prototypes to validate feasibility. Supervision of interns, BSc and MSc students.`,
       tagsList: {
         title: 'Topics',
         tags: [appliedcryptography(), authentication(), authorization(), devsecops(), cloudnative(), kotlin()],

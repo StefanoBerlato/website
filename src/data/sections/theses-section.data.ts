@@ -11,6 +11,12 @@ const thesesSectionData = {
   },
   theses: [
     {
+      authors: 'Luca Bortolotti',
+      title: 'Transparent proxy per CryptoAC: Design e implementazione di un meccanismo di transparent proxy in Kubernetes per CryptoAC',
+      venue: 'Bachelor in Computer, Communications and Electronic Engineering at the University of Trento (2026)',
+      links: [],
+    },
+    {
       authors: 'Riccardo Gennaro',
       title: 'Revisiting the ETSI C-ITS Lifecycle with Cerificateless Authorization Based on Group Signatures',
       venue: 'Double Master in Cybersecurity at the University of Twente and the University of Trento (2025)',

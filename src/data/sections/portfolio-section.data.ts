@@ -42,7 +42,7 @@ const portfolioSectionData = {
         { label: 'Repository', value: '/The-Hitchhiker-s-Guide-to-Applied-Cryptography', url: 'https://github.com/aleph-fbk/The-Hitchhiker-s-Guide-to-Applied-Cryptography' },
       ],
       description:
-        'A guided overview of relevant and current concepts in applied cryptography.',
+        'An intentionally concise and straight-to-the-point overview of relevant and current concepts in applied cryptography.',
       tagsList: {
         title: 'Topics',
         tags: [appliedcryptography()],

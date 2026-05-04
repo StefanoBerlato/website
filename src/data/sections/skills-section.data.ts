@@ -10,6 +10,7 @@ import {
   cloudnative,
   riskassessment,
   internetofthings,
+  contentprovenance,
   automotive,
   postquantum,
   confidentialcomputing,
@@ -35,19 +36,20 @@ const skillsSectionData = {
         }),
         authorization({
           level: 4,
-          description: 'role- and attribute-based access control, OPA/Rego',
+          description: 'role- and attribute-based access control, attribute-based encryption, access control encryption',
         }),
         cloudnative({
           level: 3,
-          description: 'microservices (Docker) and orchestration (Kubernetes)',
+          description: 'microservices (Docker), orchestration (Kubernetes), sidecar proxies for cryptographic access control',
         }),
-        authentication({
+        privacyenhancingtechnologies({
+          level: 3,
+          description: 'Zero-Knowledge Proofs, Functional Encryption, privacy-preserving access control',
+        }),
+        contentprovenance({
           level: 2,
-          description: 'multi-factor authentication, OpenID Connect, FIDO',
-        }),
-        devsecops({
-          level: 1,
-          description: 'securing containerized applications on distributed heterogeneous architectures',
+          description:
+            'C2PA verification, provenance pipelines, testing frameworks for digital asset authenticity',
         })
       ],
     },
@@ -58,13 +60,9 @@ const skillsSectionData = {
           level: 3,
           description: 'Trusted Execution Environments, Hardware Security Modules',
         }),
-        privacyenhancingtechnologies({
-          level: 3,
-          description: 'Functional Encryption, Searchable Encryption, Zero-Knowledge Proofs',
-        }),
         postquantum({
           level: 2,
-          description: 'crypto-agility',
+          description: 'crypto-agility, Cryptographic Bill of Materials (CBOM)',
         })
       ],
     },
@@ -73,7 +71,7 @@ const skillsSectionData = {
       skills: [
         cloud({
           level: 4,
-          description: 'data security in the cloud, multi-objective optimization for cloud architectures, cloud-to-thing continuum',
+          description: 'data security in the cloud, multi-objective optimization, Cloud-edge-IoT continuum',
         }),
         automotive({
           level: 3,
@@ -81,7 +79,11 @@ const skillsSectionData = {
         }),
         blockchain({
           level: 3,
-          description: 'blockchains, Hyperledger Fabric',
+          description: 'blockchains, Hyperledger Fabric, training for law enforcement (ECTEG)',
+        }),
+        authentication({
+          level: 2,
+          description: 'multi-factor authentication, OpenID Connect, FIDO',
         }),
         reverseengineering({
           level: 2,
@@ -95,6 +97,10 @@ const skillsSectionData = {
           level: 1,
           description: 'publish-subscribe protocols (MQTT)',
         }),
+        devsecops({
+          level: 1,
+          description: 'securing containerized applications on distributed heterogeneous architectures',
+        })
       ],
     },
     {
