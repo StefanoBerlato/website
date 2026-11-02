@@ -11,6 +11,12 @@ const thesesSectionData = {
   },
   theses: [
     {
+      authors: 'Matteo Sant\'Ana Casarotto',
+      title: 'Re-engineering CryptoAC in Rust: Cryptographic Access Control for E2E Encryption in Cloud Native Applications',
+      venue: 'Bachelor in Computer Science at the University of Trento (2026)',
+      links: [],
+    },
+    {
       authors: 'Luca Bortolotti',
       title: 'Transparent proxy per CryptoAC: Design e implementazione di un meccanismo di transparent proxy in Kubernetes per CryptoAC',
       venue: 'Bachelor in Computer, Communications and Electronic Engineering at the University of Trento (2026)',

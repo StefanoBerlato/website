@@ -12,10 +12,17 @@ const publicationsSectionData = {
   },
   publications: [
     {
+      authors: 'Stefano Berlato, Livia Marini, Giovanni Corti, Silvio Ranise',
+      title: 'The Odyssey of European Digital Sovereignty and a Knowledge Base to Orient Newcomers',
+      venue: 'in 3rd International Conference on Digital Sovereignty (ICDS 2026)',
+      links: [pdf({ url: 'publications/ICDS2026.pdf' })],
+      selected: true,
+    },
+    {
       authors: 'Riccardo Gennaro, Stefano Berlato, Alessandro Tomasi, Silvio Ranise, Florian Hahn',
       title: 'Revisiting the ETSI ITS Lifecycle with Certificateless Authorization Based on Group Signatures',
       venue: 'in 5th Workshop on Automotive Cyber Security (ACSW 2026)',
-      links: [pdf({ url: 'publications/ACSW2026.pdf' })],
+      links: [pdf({ url: 'publications/ACSW2026.pdf' }), doi({ url: 'https://doi.org/10.1109/EuroSPW72509.2026.00052' }), ieee({ url: 'https://ieeexplore.ieee.org/document/11631911' })],
       selected: true,
     },
     {
